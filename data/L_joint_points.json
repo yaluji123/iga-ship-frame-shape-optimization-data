@@ -1,0 +1,1232 @@
+[
+  {
+    "center": "straight",
+    "batch": "center",
+    "point": "center",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300618705288,
+      "compliance": 2534.3517343808744,
+      "volume": 1658880,
+      "gradients_computed": true,
+      "ks_gradient": [
+        -0.021957298092053937,
+        3.0861448580681364e-05,
+        0.005455231269909107
+      ],
+      "compliance_gradient": [
+        -0.6547391128016369,
+        -0.3948697676063041,
+        0.21783237433974267
+      ],
+      "volume_gradient": [
+        960,
+        960,
+        960.0000000000001
+      ],
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "E238BEDE6CCA35D9331EFC3789A9EE771E3625B86A269269D7221E72B939EBFB"
+  },
+  {
+    "center": "straight",
+    "batch": "h0",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        -0.02,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.953445586718,
+      "compliance": 2534.364836089996,
+      "volume": 1658860.8000750002,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "A5F86F473600DBB3DEDD81CEC714B4843A3D5C7D0340E3B0498D15AB0FFFAC3C"
+  },
+  {
+    "center": "straight",
+    "batch": "h0",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0.02,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95256729670805,
+      "compliance": 2534.338646572561,
+      "volume": 1658899.200075,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "93392A61611894BDEFFDD563B51BD4A6D814AE80680520F746FEBD381DF25AF0"
+  },
+  {
+    "center": "straight",
+    "batch": "h0",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        -0.02,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300447208785,
+      "compliance": 2534.359755237416,
+      "volume": 1658860.8000750002,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "B0255D6E508FE3ED31EE7DAA277E01EF724793342B2C64CE90D798A71F866CF1"
+  },
+  {
+    "center": "straight",
+    "batch": "h0",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0.02,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300569172478,
+      "compliance": 2534.343960177618,
+      "volume": 1658899.200075,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "A006B52EF788E779CD91C75C601CBD4C182B04A0E3626A8C745C2FBFE7D81E7C"
+  },
+  {
+    "center": "straight",
+    "batch": "h0",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        -0.02
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95289540319365,
+      "compliance": 2534.3473939029714,
+      "volume": 1658860.8001125,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "15DBBE01B873AF3CCF4CED8E8BC476375390B9B6985A00FB0436160ED198138F"
+  },
+  {
+    "center": "straight",
+    "batch": "h0",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        0.02
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95311361701533,
+      "compliance": 2534.3561073165088,
+      "volume": 1658899.2001125,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "317CB9326C8EB5BF358EEDA44C29281CE44B2A5AF4B95DBF08AD7F54C14217AA"
+  },
+  {
+    "center": "straight",
+    "batch": "h1",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        -0.01,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95322582357927,
+      "compliance": 2534.3582835066613,
+      "volume": 1658870.40001875,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "AE3874E89E7944AD12C7D887472B95EEE7AA0CA0509F6D692F2C144A0173C04E"
+  },
+  {
+    "center": "straight",
+    "batch": "h1",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0.01,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95278667785665,
+      "compliance": 2534.34518873029,
+      "volume": 1658889.60001875,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "4E214A5AD5D8678171B6A1CD6E19904F55C0360518D2DED5BCBBC1EAA0D294F7"
+  },
+  {
+    "center": "straight",
+    "batch": "h1",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        -0.01,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300560305628,
+      "compliance": 2534.35571392676,
+      "volume": 1658870.40001875,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "B5A596BFAF60F17105524FCC6DAE75D47B2FE308259A8EFE949BB311BB8E20E2"
+  },
+  {
+    "center": "straight",
+    "batch": "h1",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0.01,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300621843258,
+      "compliance": 2534.3478164977705,
+      "volume": 1658889.60001875,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "F7F5CCB2007B5DF86B89DCD7707E3248F7FD7AE98E475A9396F16FBAD7F87B9A"
+  },
+  {
+    "center": "straight",
+    "batch": "h1",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        -0.01
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95295121520272,
+      "compliance": 2534.349560106677,
+      "volume": 1658870.4000281252,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "4A307559F264CF05AC136D2FC091B3983B8D416C642DA32AFB6B0585EC68E39C"
+  },
+  {
+    "center": "straight",
+    "batch": "h1",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        0.01
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95306032039949,
+      "compliance": 2534.3539167689846,
+      "volume": 1658889.600028125,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "4E7AF22E4116B0EEBB43E347F214F1D3B198DE1861FB7C4597F5C8BECA607E77"
+  },
+  {
+    "center": "straight",
+    "batch": "h2",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        -0.005,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95311598944471,
+      "compliance": 2534.3550085104707,
+      "volume": 1658875.2000046875,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "C9CCE2FC93B6C0E90E35DD52261B1DB3DD0F13396DDC6657FF5A34EAB1FE94A2"
+  },
+  {
+    "center": "straight",
+    "batch": "h2",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0.005,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.9528964164937,
+      "compliance": 2534.3484611200784,
+      "volume": 1658884.8000046876,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "57FDAC49D760B00918F0639D1942021E87288DEFBCCDB8776B7EACF5951166AB"
+  },
+  {
+    "center": "straight",
+    "batch": "h2",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        -0.005,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300596378299,
+      "compliance": 2534.353716439645,
+      "volume": 1658875.2000046875,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "975DE21EC22665964334E8995D0C50F9BB052A01090A4AE41C025091788CE92D"
+  },
+  {
+    "center": "straight",
+    "batch": "h2",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0.005,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.9530062721659,
+      "compliance": 2534.349767737764,
+      "volume": 1658884.8000046876,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "2368A716373C80F3C0C0231A9D44248F32BA16AFB7A4B9840497188537256249"
+  },
+  {
+    "center": "straight",
+    "batch": "h2",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        -0.005
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95297880604699,
+      "compliance": 2534.3506462323,
+      "volume": 1658875.2000070312,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "13E6618280503052D23376836EC7267653E382F24DC9CC5D88371E8DB5059B52"
+  },
+  {
+    "center": "straight",
+    "batch": "h2",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        0.005
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95303335843109,
+      "compliance": 2534.3528245578955,
+      "volume": 1658884.8000070313,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "7C490F95558731E7BE743586FEE6D412675FDE38C2307D8F66F177592CB35664"
+  },
+  {
+    "center": "straight",
+    "batch": "h3",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        -0.0025,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95306108427533,
+      "compliance": 2534.3533713372103,
+      "volume": 1658877.600001172,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "12DFDB2D34C3FA37D3AE8E3BBCA4702AECA72DE65EDCC1A2759E2EB01878AE5F"
+  },
+  {
+    "center": "straight",
+    "batch": "h3",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0.0025,
+        0,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95295129778862,
+      "compliance": 2534.350097641738,
+      "volume": 1658882.400001172,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "94284BCB05B1719C05466BF3D79A4F64844502FD73ACBA9485D08B38F714F22D"
+  },
+  {
+    "center": "straight",
+    "batch": "h3",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        -0.0025,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300609264409,
+      "compliance": 2534.352723482514,
+      "volume": 1658877.600001172,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "EBC3F43D0FB466F643C7F3063C08A7B5B9083F9E999820F890619D988F11DD9E"
+  },
+  {
+    "center": "straight",
+    "batch": "h3",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0.0025,
+        0
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95300624692237,
+      "compliance": 2534.35074913315,
+      "volume": 1658882.400001172,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "CA8FA78310C66731D0E940551FE896505900BDFEEBC9DBABDB65924EA81AC2BE"
+  },
+  {
+    "center": "straight",
+    "batch": "h3",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        -0.0025
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95299252276679,
+      "compliance": 2534.3511900533763,
+      "volume": 1658877.600001758,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "5AEE3B7A10847F92712F4ECFF3BB902B0C4FB5DB8FFD9AB7D77191586AB2AC25"
+  },
+  {
+    "center": "straight",
+    "batch": "h3",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        0,
+        0,
+        0.0025
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 101.95301979893208,
+      "compliance": 2534.3522792154795,
+      "volume": 1658882.4000017578,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "67E2883F974E1D2B350549A050BB9D5768BCBD857A50876BCC8BFBB137F8EA40"
+  },
+  {
+    "center": "curved",
+    "batch": "center",
+    "point": "center",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24264931199303,
+      "compliance": 5556.433747999801,
+      "volume": 1710621.524133944,
+      "gradients_computed": true,
+      "ks_gradient": [
+        -0.13177235582250163,
+        -0.1762265751598694,
+        0.1937689376027363
+      ],
+      "compliance_gradient": [
+        -13.379428485967779,
+        -11.21797146615774,
+        14.304052121019417
+      ],
+      "volume_gradient": [
+        952.088060081412,
+        908.6134892151697,
+        1023.6505537403449
+      ],
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "3AD9BC84F282821AC392050F3BC4D295B1E556DA9A6DB7EAE63B5A26928A1E05"
+  },
+  {
+    "center": "curved",
+    "batch": "h0",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        47.98,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.2452835246087,
+      "compliance": 5556.7012942348265,
+      "volume": 1710602.4824454647,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "68C44542505343F643557C06E08D80799ABAD33E843AC061DB35FFBD5198CF99"
+  },
+  {
+    "center": "curved",
+    "batch": "h0",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48.02,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24001263012613,
+      "compliance": 5556.166117089908,
+      "volume": 1710640.5659678676,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "2456E8D5895A2C34A63F8676F08D4D15D10A31257C2681D6541D7A1471BFA9CE"
+  },
+  {
+    "center": "curved",
+    "batch": "h0",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96.02,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.2461733669655,
+      "compliance": 5556.658082478989,
+      "volume": 1710603.3519207675,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "ABDA83166248D16C79A01DECC33666FD1426DC7429B8BED2CD884C4992919558"
+  },
+  {
+    "center": "curved",
+    "batch": "h0",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -95.98,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.239124303977,
+      "compliance": 5556.20936361825,
+      "volume": 1710639.6964603378,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "233AD22D0F7A916293913FB50367913A5A0CC997E35D52B24B58E06F8A66F9AB"
+  },
+  {
+    "center": "curved",
+    "batch": "h0",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        95.98
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.23877337105424,
+      "compliance": 5556.147640604522,
+      "volume": 1710601.051209319,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "E427675A2C8532111251C3FFBCC5700F892E7B43C0D04172B75242920563A04E"
+  },
+  {
+    "center": "curved",
+    "batch": "h0",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        96.02
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.2465241283855,
+      "compliance": 5556.719802681185,
+      "volume": 1710641.9972314655,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "B5319F1FD1C54BFF1A95FC047E168AA3A5F15A343F9850B623484B075D508BC1"
+  },
+  {
+    "center": "curved",
+    "batch": "h1",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        47.99,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24396672691074,
+      "compliance": 5556.567531700655,
+      "volume": 1710612.0032715236,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "19B5851A1E572732E368C703834A7831CB3756BD89255822B473D99F9B6EA49C"
+  },
+  {
+    "center": "curved",
+    "batch": "h1",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48.01,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24133127976245,
+      "compliance": 5556.2999431302305,
+      "volume": 1710631.0450327252,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "D6004DEB51E5FD6B890EBDC7207398958E9E774AFF4804FAA029DC1172361820"
+  },
+  {
+    "center": "curved",
+    "batch": "h1",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96.01,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.2444114586134,
+      "compliance": 5556.545921476807,
+      "volume": 1710612.438013204,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "84631C878694264AA219A9ADD5AFE7C88A769225D5E668902B4B10C8D697CB34"
+  },
+  {
+    "center": "curved",
+    "batch": "h1",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -95.99,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24088692711177,
+      "compliance": 5556.3215620472,
+      "volume": 1710630.6102829883,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "DD46A818577AEA97BC149CE432B91243CB75301D76592A6F3972B19F2289514A"
+  },
+  {
+    "center": "curved",
+    "batch": "h1",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        95.99
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24071148205942,
+      "compliance": 5556.290700889862,
+      "volume": 1710611.2876500187,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "6316A8C50FF927956599ABB82C3D30C97F0194DB8E9E2BD1C86D62C9C6341491"
+  },
+  {
+    "center": "curved",
+    "batch": "h1",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        96.01
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24458686078984,
+      "compliance": 5556.576781931257,
+      "volume": 1710631.760661093,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "B1E45C93CC689DB05C11A0D4ED13DF68433DB354C2D7EF2B55A9E9628A6CCB8A"
+  },
+  {
+    "center": "curved",
+    "batch": "h2",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        47.995,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24330809660967,
+      "compliance": 5556.500642496172,
+      "volume": 1710616.7636981886,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "2547FEDE1C74A2FF61F2909977834FC4DC852A50D74FA86480521D830E6C145B"
+  },
+  {
+    "center": "curved",
+    "batch": "h2",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48.005,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.2419903730479,
+      "compliance": 5556.366848211237,
+      "volume": 1710626.2845787895,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "F49A1E1DE339AB181EF7B8BFA70623A777530C7C252F4891CCED769CA26B00EF"
+  },
+  {
+    "center": "curved",
+    "batch": "h2",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96.005,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24353041508613,
+      "compliance": 5556.489836297706,
+      "volume": 1710616.9810700358,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "C68C3F2CD31BB131EE054DFDB4FA70DC93F46FD2F714C69CD870E7760134DA6F"
+  },
+  {
+    "center": "curved",
+    "batch": "h2",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -95.995,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24176814933458,
+      "compliance": 5556.377656582998,
+      "volume": 1710626.067204928,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "3F19EFB9D6C7F31A8CC1603646A6F78BFEC473421D58DF96309E8A1B838C9DAD"
+  },
+  {
+    "center": "curved",
+    "batch": "h2",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        95.995
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24168043216386,
+      "compliance": 5556.362226091923,
+      "volume": 1710616.4058865781,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "B59EE2EA0CDDEA3A31BC9F922D4E7C956BEF3D9D2186FA0AE8F166B3DF678F68"
+  },
+  {
+    "center": "curved",
+    "batch": "h2",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        96.005
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24361812153776,
+      "compliance": 5556.50526661304,
+      "volume": 1710626.6423921157,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "517BCBBD3ADD4B2DD8944461C56E5E79F43B5D48CF35BFF6F931668F819AE62C"
+  },
+  {
+    "center": "curved",
+    "batch": "h3",
+    "point": "axis0_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        47.9975,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24297872359165,
+      "compliance": 5556.467195909489,
+      "volume": 1710619.14391493,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "A44DB8DBBC05E28F6515F99D3B73B5F375FF058E188E4678009056BFDA68E5C9"
+  },
+  {
+    "center": "curved",
+    "batch": "h3",
+    "point": "axis0_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48.0025,
+        -96,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24231986181255,
+      "compliance": 5556.400298767082,
+      "volume": 1710623.9043552303,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "3F33E0B5A858EF3E677CCB3DD12ABCD44DFA32B471C8ED7A66B10D18ABF569E0"
+  },
+  {
+    "center": "curved",
+    "batch": "h3",
+    "point": "axis1_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96.0025,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24308987098524,
+      "compliance": 5556.461792538604,
+      "volume": 1710619.2526011053,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "152C328914E14364B64D290C5A79FE984B13BB788B2144388E98E00B256FB811"
+  },
+  {
+    "center": "curved",
+    "batch": "h3",
+    "point": "axis1_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -95.9975,
+        96
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24220873810918,
+      "compliance": 5556.405702681256,
+      "volume": 1710623.7956685515,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "43A1D6C9208512860ABE4D30A398CE6E10D5E9AFEBD5527994AC711D13E970B3"
+  },
+  {
+    "center": "curved",
+    "batch": "h3",
+    "point": "axis2_minus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        95.9975
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24216488086373,
+      "compliance": 5556.397987457687,
+      "volume": 1710618.9650089103,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "266B083A13B764BEE948DF76477E28DA34925A89202A93EFC060432E492AAB07"
+  },
+  {
+    "center": "curved",
+    "batch": "h3",
+    "point": "axis2_plus",
+    "response": {
+      "schema": "iga.q3.small-l.physical.v1",
+      "beta_mm": [
+        48,
+        -96,
+        96.0025
+      ],
+      "form": "symmetric",
+      "flux_mode": "WeightedTwoSided",
+      "material_fibre_samples": 768,
+      "ks_rho": 1,
+      "ks": 149.24313372555105,
+      "compliance": 5556.469507718258,
+      "volume": 1710624.083261679,
+      "gradients_computed": false,
+      "formal_optimization_run": false,
+      "actual_CAD_certified": false
+    },
+    "original_stdout_sha256": "B35588336D5CD3F105632BC8D39C50F65C7717EFCD27B41D204FCCC3431CD9E9"
+  }
+]

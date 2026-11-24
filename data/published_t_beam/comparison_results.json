@@ -1,0 +1,536 @@
+{
+  "case": "Zhao et al. 2024, flat T-beam. Both arms perform fresh analyses with the same bicubic CAS discretization.",
+  "problem": {
+    "start_m": 0.5,
+    "bounds_m": [
+      -0.999,
+      0.999
+    ],
+    "centred_difference_step_m": 0.001,
+    "objective": "C/(3*C_start); C=f^Tu=2U in the linear-elastic model",
+    "optimizer": "SLSQP",
+    "function_tolerance": 1e-12,
+    "maximum_iterations": 15,
+    "terminal_stationarity_acceptance": "abs(dC/dx)/C_start <= 1e-5 per metre, independently recomputed with the same fresh 3-point stencil for each search"
+  },
+  "count_definition": "A structural evaluation is one new design-dependent assembled and factored shell equilibrium. Starting solves and independent terminal stencils are counted. The analytical producer additionally computes reused-factor adjoints and a direct-sensitivity diagnostic, listed separately. Parallel execution is used and elapsed times are not compared.",
+  "analytical": {
+    "terminal_m": 1.6348687603484147e-10,
+    "internal_energy_j": 0.027224456515937877,
+    "normalized_compliance_to_start": 0.4745009456543197,
+    "objective_evaluations": 5,
+    "iterations": 5,
+    "terminal_centered_derivative_over_initial_compliance_per_m": 7.030202521179893e-10,
+    "search_center_state_count": 5,
+    "search_perturbation_state_count": 0,
+    "verification_state_count": 3,
+    "total_structural_evaluations": 8,
+    "reduced_stiffness_factorizations": 8,
+    "linear_solve_role_counts": {
+      "KS_rho_0.2": 5,
+      "KS_rho_1": 5,
+      "compliance": 5,
+      "direct_mode_0": 5,
+      "state": 8
+    },
+    "optimizer_samples": [
+      {
+        "web_offset_m": 0.5,
+        "compliance_nmm": 114.74985146087046,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": 236.4892764643449,
+        "ks_rho_0p2_mpa": 33.21971934329003,
+        "dks_dx_mpa_per_m": 0.0012487437480348642,
+        "relative_residual": 1.609857792460537e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state",
+          "KS_rho_1",
+          "KS_rho_0.2",
+          "compliance",
+          "direct_mode_0"
+        ],
+        "log_sha256": "74619447cb33b445719c38aa7a114ae9b27629606f1c4748cee3042f38bfc1e6",
+        "optimizer_derivative_nmm_per_m": 236.4892764643449
+      },
+      {
+        "web_offset_m": -0.18697046504089931,
+        "compliance_nmm": 63.0430870003024,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": -91.6084452139018,
+        "ks_rho_0p2_mpa": 33.21936900861298,
+        "dks_dx_mpa_per_m": -0.0008265378103994096,
+        "relative_residual": 1.3356838745417132e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state",
+          "KS_rho_1",
+          "KS_rho_0.2",
+          "compliance",
+          "direct_mode_0"
+        ],
+        "log_sha256": "f9773537538d54ed75e5799747dd65f0176aa3cbe9b803fcea1663cf842b9d22",
+        "optimizer_derivative_nmm_per_m": -91.6084452139018
+      },
+      {
+        "web_offset_m": 0.004839145487220198,
+        "compliance_nmm": 54.454690673353156,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": 2.387870884506805,
+        "ks_rho_0p2_mpa": 33.219293025851336,
+        "dks_dx_mpa_per_m": 2.133441804555235e-05,
+        "relative_residual": 8.337934936581978e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state",
+          "KS_rho_1",
+          "KS_rho_0.2",
+          "compliance",
+          "direct_mode_0"
+        ],
+        "log_sha256": "86f21cd03afd4f04d8db84b7a396ab9620d1c7e5c6dc8ecdd9c124711be359c0",
+        "optimizer_derivative_nmm_per_m": 2.387870884506805
+      },
+      {
+        "web_offset_m": -3.356233112845018e-05,
+        "compliance_nmm": 54.448913309794946,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": -0.016561375685557,
+        "ks_rho_0p2_mpa": 33.21929297422122,
+        "dks_dx_mpa_per_m": -1.4803848211221015e-07,
+        "relative_residual": 6.369356924217901e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state",
+          "KS_rho_1",
+          "KS_rho_0.2",
+          "compliance",
+          "direct_mode_0"
+        ],
+        "log_sha256": "34db09fadf8d25eda03c7fdad9172bfada1818c72c013a7ff39eb64ceff9a4e6",
+        "optimizer_derivative_nmm_per_m": -0.016561375685557
+      },
+      {
+        "web_offset_m": 1.6348687603484147e-10,
+        "compliance_nmm": 54.448913031875755,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": 8.067278794919288e-08,
+        "ks_rho_0p2_mpa": 33.21929297421873,
+        "dks_dx_mpa_per_m": 7.206432479472368e-13,
+        "relative_residual": 2.5666092882607186e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state",
+          "KS_rho_1",
+          "KS_rho_0.2",
+          "compliance",
+          "direct_mode_0"
+        ],
+        "log_sha256": "dd54633368e517c061c8acd5ae02c9b8653ef048f3bab42525d443f4792f1f4e",
+        "optimizer_derivative_nmm_per_m": 8.067278794919288e-08
+      }
+    ],
+    "finite_difference_perturbations": [],
+    "fresh_terminal_checks": [
+      {
+        "web_offset_m": 1.6348687603484147e-10,
+        "compliance_nmm": 54.448913031875755,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297421873,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 2.5666092882607186e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "e5928ca020ee500ca804bfb033a48b9bfcac0e45b26dced9793e3719260a7dbf"
+      },
+      {
+        "web_offset_m": -0.000999999836513124,
+        "compliance_nmm": 54.449159757415714,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297642413,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.1089032272055218e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "077a29d15f5ba829dbc74fc7614292bca78ff069f28655b878a03ce1faeec577"
+      },
+      {
+        "web_offset_m": 0.001000000163486876,
+        "compliance_nmm": 54.44915975757706,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297642413,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.437600065093847e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "61db8e009f9a3d7163d1feda480a860bcfb196803c36569d1f079cce43d37f4d"
+      }
+    ]
+  },
+  "centered_finite_difference": {
+    "terminal_m": 1.6349093402061397e-10,
+    "internal_energy_j": 0.027224456515937877,
+    "normalized_compliance_to_start": 0.4745009456543197,
+    "objective_evaluations": 5,
+    "iterations": 5,
+    "terminal_centered_derivative_over_initial_compliance_per_m": 7.030512126258555e-10,
+    "search_center_state_count": 5,
+    "search_perturbation_state_count": 10,
+    "verification_state_count": 3,
+    "total_structural_evaluations": 18,
+    "reduced_stiffness_factorizations": 18,
+    "linear_solve_role_counts": {
+      "state": 18
+    },
+    "optimizer_samples": [
+      {
+        "web_offset_m": 0.5,
+        "compliance_nmm": 114.74985146087046,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21971934329003,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.609857792460537e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "a844cd389a28e774925060ec0bda04fd26905fbfd1c3401a6392b87686970e4c",
+        "optimizer_derivative_nmm_per_m": 236.48925388751252
+      },
+      {
+        "web_offset_m": -0.18697039945814953,
+        "compliance_nmm": 63.0430809923697,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21936900855878,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 5.831438651852627e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "dd64175bc3d655cfe2a608561f36641112e48d6880388243d2787315eba88462",
+        "optimizer_derivative_nmm_per_m": -91.60839633981155
+      },
+      {
+        "web_offset_m": 0.0048391321970692736,
+        "compliance_nmm": 54.454690641618036,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929302585106,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.604901322988947e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "aadd858586f2edae10fdfeb6a4d7593009dc905c4481ce5f587fa2f4a0c73786",
+        "optimizer_derivative_nmm_per_m": 2.387863826410097
+      },
+      {
+        "web_offset_m": -3.3562114281114955e-05,
+        "compliance_nmm": 54.44891330979135,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297422121,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.6158845405114896e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "ca0e85c6268f1816af881a3f5044d36d41429fb5d290aaf78a59c7f7e5722bd0",
+        "optimizer_derivative_nmm_per_m": -0.016561265216097354
+      },
+      {
+        "web_offset_m": 1.6349093402061397e-10,
+        "compliance_nmm": 54.448913031875755,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297421873,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.6790929495863835e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "d6f8b669424740c10eaa79037bcce28ad55090d6a85647c945f37f6348c3681d",
+        "optimizer_derivative_nmm_per_m": 8.067502221820178e-08
+      }
+    ],
+    "finite_difference_perturbations": [
+      {
+        "web_offset_m": 0.499,
+        "compliance_nmm": 114.51358261870261,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21971809473458,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.4105350067500695e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "dacdeb7194d4ca9038df251a426c8bb66ec22b2d2a12b11fcfef37f700b9fab0"
+      },
+      {
+        "web_offset_m": 0.501,
+        "compliance_nmm": 114.98656112647764,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21972059222142,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.370132355763793e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "cc5a3beeed654ee0961872a422e4abcb8dcd419de1f59adb9466ddee1533e7a5"
+      },
+      {
+        "web_offset_m": -0.18797039945814953,
+        "compliance_nmm": 63.1349310011141,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21936983716346,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.144056854326659e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "580fe11c4f5f23be9c0c45be6d5738f643b6892122155229c0a8033bbd715cb1"
+      },
+      {
+        "web_offset_m": -0.18597039945814953,
+        "compliance_nmm": 62.951714208434474,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21936818410033,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 2.090271241182399e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "28256f48c1f243a25a68e75143bf71ee28f1b5cde1c447ea6fc149c1706e79f4"
+      },
+      {
+        "web_offset_m": 0.0038391321970692735,
+        "compliance_nmm": 54.45254949978167,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929300671936,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.9550530108424953e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "a6117ee631913a869b9c819883f484da005380fb9759294c6c852fb1308473e8"
+      },
+      {
+        "web_offset_m": 0.005839132197069274,
+        "compliance_nmm": 54.45732522743449,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929304938723,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.1560070854213253e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "9b27f6bbfaf73d0a8672c036add35aec06d7ae4cd43e6c31b7f597fc6b1d8c05"
+      },
+      {
+        "web_offset_m": -0.001033562114281115,
+        "compliance_nmm": 54.44917659667703,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297657466,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.602269477488099e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "840e5b915a618884fe8449756cf2175b2c68626e463f94eef9cf5eabafe491be"
+      },
+      {
+        "web_offset_m": 0.0009664378857188851,
+        "compliance_nmm": 54.449143474146595,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297627859,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 9.157305499060092e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "871e5a4b67a99325be93d6c6a85e84ac3f4f55c14087a3da82867047ea508fea"
+      },
+      {
+        "web_offset_m": -0.000999999836509066,
+        "compliance_nmm": 54.44915975741571,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297642413,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 2.6366487420182087e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "790eece5001c6ff310f244e59b9ffb87abae34f0eed13cb0ca01bd4cf6e615da"
+      },
+      {
+        "web_offset_m": 0.0010000001634909341,
+        "compliance_nmm": 54.44915975757706,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297642413,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.1304929921587941e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "f20cbde7b5ba6a8988c99eeff3355fe34b7600b1e8027a9bcb3756a72a7c90a7"
+      }
+    ],
+    "fresh_terminal_checks": [
+      {
+        "web_offset_m": 1.6349093402061397e-10,
+        "compliance_nmm": 54.448913031875755,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297421873,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 3.6790929495863835e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "075709c17af099a5c25cc0439ae07dc1373b05d18f60d4404b89927e46526289"
+      },
+      {
+        "web_offset_m": -0.000999999836509066,
+        "compliance_nmm": 54.44915975741571,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297642413,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 2.6366487420182087e-23,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "6e04dee6d86ae89de2f7d84548a83b92c1c0fb339ac28fc736bd40a498820947"
+      },
+      {
+        "web_offset_m": 0.0010000001634909341,
+        "compliance_nmm": 54.44915975757706,
+        "volume_m3": 4.0,
+        "dc_dx_nmm_per_m": null,
+        "ks_rho_0p2_mpa": 33.21929297642413,
+        "dks_dx_mpa_per_m": null,
+        "relative_residual": 1.1304929921587941e-22,
+        "factorizations": 1,
+        "solve_roles": [
+          "state"
+        ],
+        "log_sha256": "0b33c1885ab46d0e1d979ecf71b26791311bc76a9da84bc9ce689728b8140d59"
+      }
+    ]
+  },
+  "scipy_version": "1.13.1",
+  "producer_sha256": "0e98f3e35d2034a50ad8f929b9377a1c9224d57cf5bd66d7c0434ecf6fdfb1ce",
+  "published_reference": {
+    "citation": "Zhao, H., Hwang, J. T., Chen, J.-S., 2024. Shape optimization of non-matching isogeometric shells with moving intersections. Computer Methods in Applied Mechanics and Engineering 431, 117322.",
+    "doi": "10.1016/j.cma.2024.117322",
+    "section": "5.1.1",
+    "reported_final_web_offset_m": 1.323e-09,
+    "reported_final_energy_in_original_normalization": 0.18721,
+    "paper_energy_figure": "https://arxiv.org/html/2407.00185v1#S5.F7",
+    "figure_vector_source": "https://arxiv.org/html/2407.00185v1/tbeam_wint_test.svg",
+    "figure_readout_method": "Original plotted curve from the vector path in Figure 7(b); x calibrated using x=0 and x=1 ticks, y calibrated using energy ticks 0.9 and 1.0. Figure-derived values estimated with piecewise cubic Hermite interpolation. Normalizing each method to its response at the shared start x=0.50 m removes the unknown scale factor. The unitless ratio compares energy change; it gives no absolute reference energy in joules.",
+    "readout_samples": [
+      {
+        "web_offset_m": -0.95,
+        "figure_energy": 0.9221274077721866,
+        "normalized_by_start": 2.327991521219225
+      },
+      {
+        "web_offset_m": -0.75,
+        "figure_energy": 0.6511816688528806,
+        "normalized_by_start": 1.643965238518763
+      },
+      {
+        "web_offset_m": -0.5,
+        "figure_energy": 0.3961060089552569,
+        "normalized_by_start": 1.0000043622818322
+      },
+      {
+        "web_offset_m": -0.25,
+        "figure_energy": 0.24001242439876055,
+        "normalized_by_start": 0.6059324170154418
+      },
+      {
+        "web_offset_m": 0.0,
+        "figure_energy": 0.1871877328238897,
+        "normalized_by_start": 0.4725718498521444
+      },
+      {
+        "web_offset_m": 0.25,
+        "figure_energy": 0.24001165144396838,
+        "normalized_by_start": 0.6059304656232726
+      },
+      {
+        "web_offset_m": 0.5,
+        "figure_energy": 0.39610428103674805,
+        "normalized_by_start": 1.0
+      },
+      {
+        "web_offset_m": 0.75,
+        "figure_energy": 0.6511785648018916,
+        "normalized_by_start": 1.6439574020697831
+      },
+      {
+        "web_offset_m": 0.95,
+        "figure_energy": 0.9221193218584106,
+        "normalized_by_start": 2.327971107620678
+      }
+    ],
+    "center_to_start_energy_ratio": 0.4725718498521444,
+    "present_center_to_start_energy_relative_difference": 0.0040821216980633235,
+    "geometry_source": "https://drive.google.com/file/d/1nE7eRklP8EEqTT2b5GbwNXeaBi02F3PN/view",
+    "geometry_iges_sha256": "282ecec393f626af756a42b0cd40ea0c4a261a96aed7c96fd6f60df921c4ffb9",
+    "geometry_units": "The paper interprets the numeric CAD coordinates as metres.",
+    "script": "https://github.com/hanzhao2020/GOLDFISH/blob/4490e941b6cf04c08b7c9d3698d865936e702aac/demos_om/shape_opt_mint/T-beam/T_beam_2patch_shopt_mi.py",
+    "boundary_and_loading": "The public example fixes the first v=0 control row on each surface in all three displacement components and applies uniform global downward traction to both surfaces; this matches the supported end y=0 of the reconstructed geometry and a total vertical force of 40 N.",
+    "comparison_scope": "The published geometrically nonlinear penalty-coupled shell and the present linear Nitsche-coupled shell share the nominal geometry, material, support, dead loading, one design variable, corresponding energy-minimization objective and initial design. Structural evaluation counts compare derivatives within the present shell model only."
+  },
+  "model_discretization": {
+    "degree": [
+      3,
+      3
+    ],
+    "spanwise_elements_web": 2,
+    "spanwise_elements_flange": 1,
+    "transverse_elements_on_each_surface": 1,
+    "displacement_coefficients": 108,
+    "free_coefficients": 84
+  }
+}

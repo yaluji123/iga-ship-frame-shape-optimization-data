@@ -1,0 +1,288 @@
+{
+  "interface_count": 183,
+  "length_resolution_mm": 1e-06,
+  "corrected_interfaces": [
+    {
+      "interface": 1,
+      "quadrature_points": [
+        8,
+        96
+      ],
+      "before_norm_weights": [
+        1.4259884481596994e-12,
+        395.44072944421066
+      ],
+      "joined_length": 395.4407294442121,
+      "join": [
+        {
+          "path_role": [
+            "material",
+            "material"
+          ],
+          "outward_sign": [
+            1,
+            1
+          ],
+          "original_length": 1.4259884481596994e-12,
+          "norm_length": 395.4407294442121
+        },
+        {
+          "path_role": [
+            "material",
+            "material"
+          ],
+          "outward_sign": [
+            1,
+            -1
+          ],
+          "original_length": 395.44072944421066,
+          "norm_length": 395.4407294442121
+        }
+      ],
+      "new_spectra": {
+        "7": {
+          "d": 1484548.1621001253,
+          "g1": 0.6998736439431721,
+          "g2": 0.30012635605682797,
+          "sides": [
+            {
+              "maximum": 235685.1086141148,
+              "relative_error": null,
+              "residual": 4.239370722739962e-16,
+              "relative_gap": 0.0005013593084359038
+            },
+            {
+              "maximum": 549601.1678416877,
+              "relative_error": null,
+              "residual": 8.276049824818106e-14,
+              "relative_gap": 0.3305792834505387
+            }
+          ]
+        },
+        "8": {
+          "d": 19487951.06668304,
+          "g1": 0.8376026989096588,
+          "g2": 0.16239730109034126,
+          "sides": [
+            {
+              "maximum": 2585149.13946291,
+              "relative_error": null,
+              "residual": 2.6128567558676017e-15,
+              "relative_gap": 0.05138182478505995
+            },
+            {
+              "maximum": 13333521.442536464,
+              "relative_error": null,
+              "residual": 7.139543236255809e-16,
+              "relative_gap": 0.6980249514662153
+            }
+          ]
+        }
+      }
+    },
+    {
+      "interface": 2,
+      "quadrature_points": [
+        8,
+        8
+      ],
+      "before_norm_weights": [
+        1.0786711257847925e-07,
+        29.888368848133737
+      ],
+      "joined_length": 29.88836895600085,
+      "join": [
+        {
+          "path_role": [
+            "interior",
+            "material"
+          ],
+          "outward_sign": [
+            0,
+            -1
+          ],
+          "original_length": 1.0786711257847925e-07,
+          "norm_length": 29.88836895600085
+        },
+        {
+          "path_role": [
+            "interior",
+            "material"
+          ],
+          "outward_sign": [
+            0,
+            -1
+          ],
+          "original_length": 29.888368848133737,
+          "norm_length": 29.88836895600085
+        }
+      ],
+      "new_spectra": {
+        "7": {
+          "d": 2048816.304899406,
+          "g1": 0.0,
+          "g2": 1.0,
+          "sides": [
+            null,
+            {
+              "maximum": 227646.25609993402,
+              "relative_error": null,
+              "residual": 1.1727057262473542e-15,
+              "relative_gap": 3.715814402750293e-05
+            }
+          ]
+        },
+        "8": {
+          "d": 22995737.52384141,
+          "g1": 0.0,
+          "g2": 1.0,
+          "sides": [
+            null,
+            {
+              "maximum": 2555081.94709349,
+              "relative_error": null,
+              "residual": 1.5601937559564113e-14,
+              "relative_gap": 0.7276106399978122
+            }
+          ]
+        }
+      }
+    },
+    {
+      "interface": 3,
+      "quadrature_points": [
+        8,
+        8
+      ],
+      "before_norm_weights": [
+        1.3158524422759413e-07,
+        29.88836882441573
+      ],
+      "joined_length": 29.888368956000974,
+      "join": [
+        {
+          "path_role": [
+            "interior",
+            "material"
+          ],
+          "outward_sign": [
+            0,
+            1
+          ],
+          "original_length": 1.3158524422759413e-07,
+          "norm_length": 29.888368956000974
+        },
+        {
+          "path_role": [
+            "interior",
+            "material"
+          ],
+          "outward_sign": [
+            0,
+            1
+          ],
+          "original_length": 29.88836882441573,
+          "norm_length": 29.888368956000974
+        }
+      ],
+      "new_spectra": {
+        "7": {
+          "d": 2048816.3048993354,
+          "g1": 0.0,
+          "g2": 1.0,
+          "sides": [
+            null,
+            {
+              "maximum": 227646.25609992616,
+              "relative_error": null,
+              "residual": 1.6663131277107654e-15,
+              "relative_gap": 3.7158143880480466e-05
+            }
+          ]
+        },
+        "8": {
+          "d": 22995737.523840223,
+          "g1": 0.0,
+          "g2": 1.0,
+          "sides": [
+            null,
+            {
+              "maximum": 2555081.9470933583,
+              "relative_error": null,
+              "residual": 8.874279280965628e-15,
+              "relative_gap": 0.7276106399974398
+            }
+          ]
+        }
+      }
+    },
+    {
+      "interface": 4,
+      "quadrature_points": [
+        88,
+        8
+      ],
+      "before_norm_weights": [
+        400.1039999516287,
+        4.74495878108883e-08
+      ],
+      "joined_length": 400.10399999907827,
+      "join": [
+        {
+          "path_role": [
+            "material",
+            "interior"
+          ],
+          "outward_sign": [
+            1,
+            0
+          ],
+          "original_length": 400.1039999516287,
+          "norm_length": 400.10399999907827
+        },
+        {
+          "path_role": [
+            "material",
+            "interior"
+          ],
+          "outward_sign": [
+            1,
+            0
+          ],
+          "original_length": 4.74495878108883e-08,
+          "norm_length": 400.10399999907827
+        }
+      ],
+      "new_spectra": {
+        "7": {
+          "d": 2121268.9484353447,
+          "g1": 1.0,
+          "g2": 0.0,
+          "sides": [
+            {
+              "maximum": 235696.54982614945,
+              "relative_error": null,
+              "residual": 5.866537975130592e-16,
+              "relative_gap": 0.000656460783611215
+            },
+            null
+          ]
+        },
+        "8": {
+          "d": 23261307.176453587,
+          "g1": 1.0,
+          "g2": 0.0,
+          "sides": [
+            {
+              "maximum": 2584589.6862726207,
+              "relative_error": null,
+              "residual": 6.902355257689074e-16,
+              "relative_gap": 0.05023330884538738
+            },
+            null
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+[
+  {
+    "scope": "flat",
+    "arm": "full_dual",
+    "field": "generator",
+    "metrics": {
+      "membrane_force_relative": 4.878125197277702e-16,
+      "bending_force_relative": 2.190367914278937e-14,
+      "displacement_relative": 9.888273894808256e-13,
+      "free_relative_residual": 4.731277254762074e-16,
+      "membrane_relative": 7.35085922294728e-15,
+      "curvature_relative": 9.22600747594748e-13,
+      "bottom_stress_relative": 5.627706361096134e-13,
+      "top_stress_relative": 6.783962701823934e-13,
+      "physical_energy_relative": 7.915959322770823e-14
+    }
+  },
+  {
+    "scope": "pilot",
+    "arm": "full_dual",
+    "field": "generator",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": false,
+    "each_within": {
+      "u_L2_relative": false,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.262140642857756e-06,
+      "signed_two_face_tensor_stress_L2_relative": 2.937934048918845e-07,
+      "total_energy_relative_error": 1.8439168935421843e-11,
+      "physical_total_energy_relative_error": 3.182531186651396e-14
+    },
+    "applicability": "curvature_not_generally_representable_observe_original_threshold"
+  },
+  {
+    "scope": "pilot",
+    "arm": "full_dual",
+    "field": "bending_twist",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": false,
+    "each_within": {
+      "u_L2_relative": false,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.262140642857756e-06,
+      "signed_two_face_tensor_stress_L2_relative": 2.937934048918845e-07,
+      "total_energy_relative_error": 1.8439168935421843e-11,
+      "physical_total_energy_relative_error": 3.182531186651396e-14
+    },
+    "applicability": "curvature_not_generally_representable_observe_original_threshold"
+  },
+  {
+    "scope": "pilot",
+    "arm": "full_dual",
+    "field": "membrane_shear",
+    "case": 0,
+    "threshold": 1e-06,
+    "all_within": false,
+    "each_within": {
+      "u_L2_relative": false,
+      "signed_two_face_tensor_stress_L2_relative": false,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 3.2604908308768235e-06,
+      "signed_two_face_tensor_stress_L2_relative": 2.8754292608932092e-06,
+      "total_energy_relative_error": 1.3285833320909535e-11,
+      "physical_total_energy_relative_error": 2.957930518410717e-12
+    },
+    "applicability": "curvature_not_generally_representable_observe_original_threshold"
+  },
+  {
+    "scope": "catalog",
+    "arm": "compatible",
+    "field": "generator",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.798231201414246e-10,
+      "signed_two_face_tensor_stress_L2_relative": 6.822305623557687e-13,
+      "total_energy_relative_error": 5.683091404734637e-16,
+      "physical_total_energy_relative_error": 1.1366182809469274e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "compatible",
+    "field": "bending_twist",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.798231201414246e-10,
+      "signed_two_face_tensor_stress_L2_relative": 6.822305623557687e-13,
+      "total_energy_relative_error": 5.683091404734637e-16,
+      "physical_total_energy_relative_error": 1.1366182809469274e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "compatible",
+    "field": "membrane_shear",
+    "case": 0,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 1.6477728655641194e-11,
+      "signed_two_face_tensor_stress_L2_relative": 1.6162275652415006e-13,
+      "total_energy_relative_error": 1.3639396795622734e-15,
+      "physical_total_energy_relative_error": 1.9701350927010615e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "native",
+    "field": "generator",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 3.4379935882736696e-11,
+      "signed_two_face_tensor_stress_L2_relative": 2.7492637608090463e-13,
+      "total_energy_relative_error": 2.0838001817360336e-15,
+      "physical_total_energy_relative_error": 2.2732365618938547e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "native",
+    "field": "bending_twist",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 3.4379935882736696e-11,
+      "signed_two_face_tensor_stress_L2_relative": 2.7492637608090463e-13,
+      "total_energy_relative_error": 2.0838001817360336e-15,
+      "physical_total_energy_relative_error": 2.2732365618938547e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "native",
+    "field": "membrane_shear",
+    "case": 0,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 1.2006423174080996e-11,
+      "signed_two_face_tensor_stress_L2_relative": 1.1555157804987787e-13,
+      "total_energy_relative_error": 1.8185862394163645e-15,
+      "physical_total_energy_relative_error": 2.1216839459857585e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "dual",
+    "field": "generator",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.189462759406367e-10,
+      "signed_two_face_tensor_stress_L2_relative": 5.859954121075973e-13,
+      "total_energy_relative_error": 1.1366182809469274e-15,
+      "physical_total_energy_relative_error": 9.47181900789106e-16
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "dual",
+    "field": "bending_twist",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.189462759406367e-10,
+      "signed_two_face_tensor_stress_L2_relative": 5.859954121075973e-13,
+      "total_energy_relative_error": 1.1366182809469274e-15,
+      "physical_total_energy_relative_error": 9.47181900789106e-16
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "dual",
+    "field": "membrane_shear",
+    "case": 0,
+    "threshold": 1e-06,
+    "all_within": true,
+    "each_within": {
+      "u_L2_relative": true,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 7.409445358668192e-12,
+      "signed_two_face_tensor_stress_L2_relative": 7.181560171598876e-14,
+      "total_energy_relative_error": 3.1825259189786377e-15,
+      "physical_total_energy_relative_error": 3.485623625548032e-15
+    },
+    "applicability": "original_mandatory_accuracy_control"
+  },
+  {
+    "scope": "catalog",
+    "arm": "full_dual",
+    "field": "generator",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": false,
+    "each_within": {
+      "u_L2_relative": false,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.262140642857756e-06,
+      "signed_two_face_tensor_stress_L2_relative": 2.937934048918845e-07,
+      "total_energy_relative_error": 1.8439168935421843e-11,
+      "physical_total_energy_relative_error": 3.182531186651396e-14
+    },
+    "applicability": "curvature_not_generally_representable_observe_original_threshold"
+  },
+  {
+    "scope": "catalog",
+    "arm": "full_dual",
+    "field": "bending_twist",
+    "case": 1,
+    "threshold": 1e-06,
+    "all_within": false,
+    "each_within": {
+      "u_L2_relative": false,
+      "signed_two_face_tensor_stress_L2_relative": true,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 5.262140642857756e-06,
+      "signed_two_face_tensor_stress_L2_relative": 2.937934048918845e-07,
+      "total_energy_relative_error": 1.8439168935421843e-11,
+      "physical_total_energy_relative_error": 3.182531186651396e-14
+    },
+    "applicability": "curvature_not_generally_representable_observe_original_threshold"
+  },
+  {
+    "scope": "catalog",
+    "arm": "full_dual",
+    "field": "membrane_shear",
+    "case": 0,
+    "threshold": 1e-06,
+    "all_within": false,
+    "each_within": {
+      "u_L2_relative": false,
+      "signed_two_face_tensor_stress_L2_relative": false,
+      "total_energy_relative_error": true,
+      "physical_total_energy_relative_error": true
+    },
+    "metrics": {
+      "u_L2_relative": 3.2604908308768235e-06,
+      "signed_two_face_tensor_stress_L2_relative": 2.8754292608932092e-06,
+      "total_energy_relative_error": 1.3285833320909535e-11,
+      "physical_total_energy_relative_error": 2.957930518410717e-12
+    },
+    "applicability": "curvature_not_generally_representable_observe_original_threshold"
+  }
+]

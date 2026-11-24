@@ -1,0 +1,2447 @@
+{
+  "scope": "Independent manufactured Kirchhoff\u2013Love shell check for the skew Nitsche sign, whole-chain endpoint-work rows with h weighting, and two-active-side trace quotient in Eqs. (21)\u2013(29). Two coplanar, nonmatching cubic carriers sample an interior quadratic cut of a flat rectangle. An orthogonal T pair checks the one-sided material-edge/interior rule with a separately manufactured receiving line load. These are local manufactured models.",
+  "material": [
+    210000.0,
+    0.3,
+    0.1,
+    0.0
+  ],
+  "reference_displacement": "u_x=.001*(.4*x+.3*y); u_y=.001*(.1*x-.2*y); w=.002*(x*y+a*x^4).",
+  "reference_loading": "Independent external loading from the unintegrated exact bending boundary work (Q mu) dot grad(test) - div(Q) dot mu times test plus div(div(Q)) body term. Six exact corner displacements fix the rigid-body gauge; none are at interface endpoints.",
+  "orthogonal_T_reference_displacement": "u_x=.001*(.4*x+.3*y); u_y=-.0002*y; w=.002*((x+a*x^4)*y+.18*y^2) on each local shell. The receiver is uncut and rotates 90 degrees about x. The manufactured line load applies the physical flux of the exact web using unintegrated trace work on the receiver, then compares the coupled solution to the same exact displacement.",
+  "retained_quadrature": "12-point Gauss quadrature in each longitudinal knot span and each retained transverse interval.",
+  "source_code_sha256": {
+    "bulk_matrix.py": "84ab6239befec1d7af3ca0006bb4b75393fc2c09fbfd29defeee29f3cc8fc92b",
+    "bulk_stress.py": "95710ec1c0194524936cfbc7109b1aed21e6504977525d2a4c46f4269466abb6"
+  },
+  "polynomial_patch_test": {
+    "spans": [
+      2,
+      4
+    ],
+    "transverse_spans": [
+      1,
+      1
+    ],
+    "amplitude": 0.2,
+    "quartic": 0.0,
+    "h": 1.0982300837716668,
+    "orthogonal_material_boundary_interior": false,
+    "end_weight_mm": 1.0982300837716668,
+    "end_weight_scale": 1.0,
+    "target_interface_compliance_ratio": 0.1,
+    "calibration": [
+      {
+        "gamma": [
+          0.5340877665904271,
+          0.46591223340957283
+        ],
+        "eta": 1338962.084144204,
+        "d": [
+          278556.39880065015,
+          319316.7172627728
+        ],
+        "kernel_traction_relative": [
+          1.4130014245697573e-15,
+          2.0399465920640752e-15
+        ],
+        "leading_relative_gap": [
+          0.019752127967271105,
+          0.0012708101318481546
+        ]
+      },
+      {
+        "gamma": [
+          0.43774848349016926,
+          0.5622515165098306
+        ],
+        "eta": 610.7959095682397,
+        "d": [
+          155.03471681535353,
+          120.70436482862247
+        ],
+        "kernel_traction_relative": [
+          1.0180849206764962e-15,
+          1.7054606529782798e-15
+        ],
+        "leading_relative_gap": [
+          0.07952419861249838,
+          0.20019620089459134
+        ]
+      }
+    ],
+    "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+    "dofs": 144,
+    "free_residual": 4.709190350020764e-16,
+    "relative_displacement_L2": 9.196315748868647e-12,
+    "translation_jump_relative_L2": 1.5626945178049765e-14,
+    "rotation_jump_relative_L2": 2.876058077219144e-13,
+    "side_force_resultants_N": [
+      [
+        3.2307692307685816,
+        -1.8461538461542777,
+        -1.4337785488862326e-12
+      ],
+      [
+        -3.2307692307690616,
+        1.8461538461541027,
+        7.115119276119642e-14
+      ]
+    ],
+    "exact_side_force_resultants_N": [
+      [
+        3.230769230769229,
+        -1.846153846153846,
+        0.0
+      ],
+      [
+        -3.230769230769229,
+        1.846153846153846,
+        0.0
+      ]
+    ],
+    "relative_resultant_error_by_side": [
+      4.3841023848367894e-13,
+      8.454868118906994e-14
+    ],
+    "sum_side_forces_relative": 3.9109348893531694e-13,
+    "endpoint_twisting_rows_N": [
+      [
+        0.005909943714788705,
+        0.005909943714780416
+      ],
+      [
+        -0.005909943714782987,
+        -0.005909943714913185
+      ]
+    ],
+    "active_edge_force_and_moment_checks": [
+      {
+        "side": 1,
+        "trace_errors_by_row": {
+          "Fx_N_per_mm": {
+            "exact_RMS": 4.350703402794228,
+            "RMS_error": 1.1185391937837096e-12,
+            "relative_RMS_error": 2.570938743066996e-13
+          },
+          "Fy_N_per_mm": {
+            "exact_RMS": 2.1391031267101517,
+            "RMS_error": 5.996999809359479e-13,
+            "relative_RMS_error": 2.8035113101735334e-13
+          },
+          "Fz_N_per_mm": {
+            "exact_RMS": 0.04048856591119158,
+            "RMS_error": 1.5879559782261738e-12,
+            "relative_RMS_error": 3.921986226208228e-11
+          },
+          "M_about_t_N": {
+            "exact_RMS": 0.018876480753234094,
+            "RMS_error": 3.4243672550331535e-13,
+            "relative_RMS_error": 1.8140919908741247e-11
+          }
+        },
+        "exact_endpoint_twisting_N": [
+          0.005909943714821765,
+          0.005909943714821765
+        ],
+        "maximum_endpoint_twisting_absolute_error_N": 4.1348868773383174e-14
+      },
+      {
+        "side": 2,
+        "trace_errors_by_row": {
+          "Fx_N_per_mm": {
+            "exact_RMS": 4.350703402794228,
+            "RMS_error": 5.474276224457493e-13,
+            "relative_RMS_error": 1.2582508430571602e-13
+          },
+          "Fy_N_per_mm": {
+            "exact_RMS": 2.1391031267101517,
+            "RMS_error": 5.443842552021942e-13,
+            "relative_RMS_error": 2.5449182342107726e-13
+          },
+          "Fz_N_per_mm": {
+            "exact_RMS": 0.04048856591119158,
+            "RMS_error": 6.681968524862908e-13,
+            "relative_RMS_error": 1.6503346993122133e-11
+          },
+          "M_about_t_N": {
+            "exact_RMS": 0.018876480753234094,
+            "RMS_error": 1.5042974362678278e-13,
+            "relative_RMS_error": 7.969162557009455e-12
+          }
+        },
+        "exact_endpoint_twisting_N": [
+          -0.005909943714821765,
+          -0.005909943714821765
+        ],
+        "maximum_endpoint_twisting_absolute_error_N": 9.141992718397773e-14
+      }
+    ],
+    "drop_endpoint_work_relative_residual": 0.0006883643215401606,
+    "retained_endpoint_work_relative_residual": 1.8440003506821243e-14
+  },
+  "curved_refinement": [
+    {
+      "spans": [
+        1,
+        2
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716665,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716665,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.5503011599259057,
+            0.44969884007409433
+          ],
+          "eta": 1262920.1400339636,
+          "d": [
+            254995.7554562805,
+            312040.9649725876
+          ],
+          "kernel_traction_relative": [
+            2.1386308268086924e-15,
+            2.114180846526356e-15
+          ],
+          "leading_relative_gap": [
+            0.025857827893737917,
+            0.029895681301902566
+          ]
+        },
+        {
+          "gamma": [
+            0.4506237909791005,
+            0.5493762090208993
+          ],
+          "eta": 578.7592728583089,
+          "d": [
+            142.70570520349625,
+            117.053823622528
+          ],
+          "kernel_traction_relative": [
+            8.054134797437265e-16,
+            1.542189212939574e-15
+          ],
+          "leading_relative_gap": [
+            0.20303421289534407,
+            0.6200709326069516
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 108,
+      "free_residual": 1.0143872375497454e-15,
+      "relative_displacement_L2": 0.022912866681601647,
+      "translation_jump_relative_L2": 0.0007101763893413058,
+      "rotation_jump_relative_L2": 0.005755356628048711,
+      "side_force_resultants_N": [
+        [
+          3.2307692307686438,
+          -1.8461538461541895,
+          0.0266927809067607
+        ],
+        [
+          -3.230769230768221,
+          1.8461538461536855,
+          0.009330597714436513
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.23076923076923,
+          -1.846153846153846,
+          -0.03692307692307695
+        ],
+        [
+          -3.23076923076923,
+          1.846153846153846,
+          0.03692307692307695
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.017095406490812846,
+        0.007414890944687808
+      ],
+      "sum_side_forces_relative": 0.009680515546125038,
+      "endpoint_twisting_rows_N": [
+        [
+          0.013333645808301021,
+          0.045765791340097936
+        ],
+        [
+          -0.01513575838146807,
+          -0.043963678767250644
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 1.1985289646633477e-12,
+              "relative_RMS_error": 2.7547935441740184e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101526,
+              "RMS_error": 6.131203565029509e-13,
+              "relative_RMS_error": 2.866249639146212e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700658,
+              "RMS_error": 0.07989028686121222,
+              "relative_RMS_error": 0.7799402160129515
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.044911142653099284,
+              "RMS_error": 0.009275933261119884,
+              "relative_RMS_error": 0.20653968510150475
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.007423702093479256
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 1.3645741022416876e-12,
+              "relative_RMS_error": 3.136444790433871e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101526,
+              "RMS_error": 9.021031596943125e-13,
+              "relative_RMS_error": 4.2172027539490715e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700658,
+              "RMS_error": 0.05010930613047876,
+              "relative_RMS_error": 0.48919918281880237
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.044911142653099284,
+              "RMS_error": 0.003866445546244737,
+              "relative_RMS_error": 0.08609100810704749
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.009225814666646305
+        }
+      ]
+    },
+    {
+      "spans": [
+        2,
+        4
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716668,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716668,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.5340877665904271,
+            0.46591223340957283
+          ],
+          "eta": 1338962.084144204,
+          "d": [
+            278556.39880065015,
+            319316.7172627728
+          ],
+          "kernel_traction_relative": [
+            1.4130014245697573e-15,
+            2.0399465920640752e-15
+          ],
+          "leading_relative_gap": [
+            0.019752127967271105,
+            0.0012708101318481546
+          ]
+        },
+        {
+          "gamma": [
+            0.43774848349016926,
+            0.5622515165098306
+          ],
+          "eta": 610.7959095682397,
+          "d": [
+            155.03471681535353,
+            120.70436482862247
+          ],
+          "kernel_traction_relative": [
+            1.0180849206764962e-15,
+            1.7054606529782798e-15
+          ],
+          "leading_relative_gap": [
+            0.07952419861249838,
+            0.20019620089459134
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 144,
+      "free_residual": 1.0372688105711882e-15,
+      "relative_displacement_L2": 0.0012324616429448257,
+      "translation_jump_relative_L2": 0.00017574397401807872,
+      "rotation_jump_relative_L2": 0.0014154594987817314,
+      "side_force_resultants_N": [
+        [
+          3.2307692307685816,
+          -1.8461538461542777,
+          -0.018479100472096954
+        ],
+        [
+          -3.2307692307690616,
+          1.8461538461541027,
+          0.030198809536673418
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.230769230769229,
+          -1.846153846153846,
+          -0.03692307692307694
+        ],
+        [
+          -3.230769230769229,
+          1.846153846153846,
+          0.03692307692307694
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.004956425732399612,
+        0.001807003603267725
+      ],
+      "sum_side_forces_relative": 0.0031494221291318864,
+      "endpoint_twisting_rows_N": [
+        [
+          0.008275470770528042,
+          0.05082396637769289
+        ],
+        [
+          -0.008242489138352538,
+          -0.05085694801000265
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794228,
+              "RMS_error": 1.1185391937837096e-12,
+              "relative_RMS_error": 2.570938743066996e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 5.996999809359479e-13,
+              "relative_RMS_error": 2.8035113101735334e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700654,
+              "RMS_error": 0.03582539578252237,
+              "relative_RMS_error": 0.34975048936688746
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0019190407326359741,
+              "relative_RMS_error": 0.04272972405665441
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0023655270557062773
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794228,
+              "RMS_error": 5.474276224457493e-13,
+              "relative_RMS_error": 1.2582508430571602e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 5.443842552021942e-13,
+              "relative_RMS_error": 2.5449182342107726e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700654,
+              "RMS_error": 0.019159608959844893,
+              "relative_RMS_error": 0.18704839021075423
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0008650470675359104,
+              "relative_RMS_error": 0.01926130168224999
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.002332545423530773
+        }
+      ]
+    },
+    {
+      "spans": [
+        4,
+        8
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716665,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716665,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.5121464758505682,
+            0.4878535241494318
+          ],
+          "eta": 1415916.3468634814,
+          "d": [
+            307185.63137450966,
+            322482.1196376102
+          ],
+          "kernel_traction_relative": [
+            2.516439977510334e-15,
+            2.8355022330550256e-15
+          ],
+          "leading_relative_gap": [
+            0.002235682027212471,
+            6.117372401259757e-05
+          ]
+        },
+        {
+          "gamma": [
+            0.4048721753898827,
+            0.5951278246101174
+          ],
+          "eta": 665.7470546533875,
+          "d": [
+            182.70431869084177,
+            124.29580991268269
+          ],
+          "kernel_traction_relative": [
+            2.991135739371983e-15,
+            2.6257149627635503e-15
+          ],
+          "leading_relative_gap": [
+            0.01053330610093739,
+            0.09846293049273258
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 216,
+      "free_residual": 9.405102953536802e-16,
+      "relative_displacement_L2": 6.80548874073047e-05,
+      "translation_jump_relative_L2": 4.3499041147298755e-05,
+      "rotation_jump_relative_L2": 0.00019304118120351663,
+      "side_force_resultants_N": [
+        [
+          3.2307692307691434,
+          -1.846153846154315,
+          -0.03383024629806028
+        ],
+        [
+          -3.2307692307692983,
+          1.846153846154459,
+          0.035131623397062356
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.230769230769231,
+          -1.8461538461538458,
+          -0.03692307692307695
+        ],
+        [
+          -3.230769230769231,
+          1.8461538461538458,
+          0.03692307692307695
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.0008311323394132659,
+        0.000481414969181711
+      ],
+      "sum_side_forces_relative": 0.00034971737023155487,
+      "endpoint_twisting_rows_N": [
+        [
+          0.00648387716346243,
+          0.05261555998474578
+        ],
+        [
+          -0.0063619192851991635,
+          -0.052737517862990496
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 7.465064633789372e-13,
+              "relative_RMS_error": 1.7158293596835286e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 1.266951230100959e-12,
+              "relative_RMS_error": 5.922815100782332e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.012844768564528233,
+              "relative_RMS_error": 0.1253988684038443
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0002987644939816197,
+              "relative_RMS_error": 0.006652346752549219
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0005739334486501296
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 1.028534067218384e-12,
+              "relative_RMS_error": 2.364063858174773e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 2.265776704380705e-12,
+              "relative_RMS_error": 1.05921807887092e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.009681344566720143,
+              "relative_RMS_error": 0.09451549455293758
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.00018515952646659217,
+              "relative_RMS_error": 0.004122797050540296
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0004519755704054107
+        }
+      ]
+    },
+    {
+      "spans": [
+        8,
+        16
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716668,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716668,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.6938482662991555,
+            0.30615173370084453
+          ],
+          "eta": 2013341.327096229,
+          "d": [
+            322411.4014044821,
+            730698.4324255809
+          ],
+          "kernel_traction_relative": [
+            3.419739057221038e-15,
+            4.7206901651642856e-15
+          ],
+          "leading_relative_gap": [
+            0.00012934047671409044,
+            1.6374744424063614e-05
+          ]
+        },
+        {
+          "gamma": [
+            0.387430763829457,
+            0.612569236170543
+          ],
+          "eta": 697.1037144897383,
+          "d": [
+            199.9220906234821,
+            126.44443060975621
+          ],
+          "kernel_traction_relative": [
+            9.93101853571851e-15,
+            8.07256597252901e-15
+          ],
+          "leading_relative_gap": [
+            0.0057665036116683055,
+            0.04377991580654539
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 360,
+      "free_residual": 1.8263934887819765e-15,
+      "relative_displacement_L2": 6.115211500752181e-06,
+      "translation_jump_relative_L2": 5.100778020696649e-06,
+      "rotation_jump_relative_L2": 3.6321955239889935e-05,
+      "side_force_resultants_N": [
+        [
+          3.2307692307669793,
+          -1.8461538461553244,
+          -0.03625497701294551
+        ],
+        [
+          -3.230769230769733,
+          1.8461538461541607,
+          0.03669005547341787
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.2307692307692304,
+          -1.8461538461538474,
+          -0.03692307692307693
+        ],
+        [
+          -3.2307692307692304,
+          1.8461538461538474,
+          0.03692307692307693
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.00017953761734570487,
+        6.261955020170787e-05
+      ],
+      "sum_side_forces_relative": 0.000116918067143997,
+      "endpoint_twisting_rows_N": [
+        [
+          0.006047317018012907,
+          0.05305212012987509
+        ],
+        [
+          -0.005956852319596848,
+          -0.05314258482834944
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.3507034027942275,
+              "RMS_error": 5.505472464630781e-12,
+              "relative_RMS_error": 1.2654212330573733e-12
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101512,
+              "RMS_error": 2.562503477448384e-12,
+              "relative_RMS_error": 1.197933585085916e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.006229068474864079,
+              "relative_RMS_error": 0.06081216131173671
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309926,
+              "RMS_error": 6.950111566510377e-05,
+              "relative_RMS_error": 0.0015475249917807998
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.00013737330352081578
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.3507034027942275,
+              "RMS_error": 1.6305204121782472e-12,
+              "relative_RMS_error": 3.747716774099218e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101512,
+              "RMS_error": 1.510125653199424e-12,
+              "relative_RMS_error": 7.059620615495675e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.003476617783320331,
+              "relative_RMS_error": 0.03394097244422117
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309926,
+              "RMS_error": 2.534693816998184e-05,
+              "relative_RMS_error": 0.0005643797212145232
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 4.690860504646954e-05
+        }
+      ]
+    },
+    {
+      "spans": [
+        16,
+        32
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716668,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716668,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.8209277656360084,
+            0.17907223436399153
+          ],
+          "eta": 5339075.068790356,
+          "d": [
+            722634.3023485469,
+            3312800.364087138
+          ],
+          "kernel_traction_relative": [
+            4.222624300197501e-15,
+            4.60540006155766e-15
+          ],
+          "leading_relative_gap": [
+            9.497949988723775e-06,
+            7.786181045466023e-07
+          ]
+        },
+        {
+          "gamma": [
+            0.38530243807317616,
+            0.6146975619268239
+          ],
+          "eta": 706.6272164887226,
+          "d": [
+            203.77274423190212,
+            127.72807316707768
+          ],
+          "kernel_traction_relative": [
+            2.6594092741139568e-14,
+            1.0552434328117677e-14
+          ],
+          "leading_relative_gap": [
+            0.005129946580795353,
+            0.017903255450098632
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 648,
+      "free_residual": 3.797247547994628e-15,
+      "relative_displacement_L2": 6.219260937286276e-07,
+      "translation_jump_relative_L2": 4.273130964928409e-07,
+      "rotation_jump_relative_L2": 5.330394350827111e-06,
+      "side_force_resultants_N": [
+        [
+          3.230769230767666,
+          -1.8461538461562434,
+          -0.03676005420726798
+        ],
+        [
+          -3.23076923076953,
+          1.8461538461524156,
+          0.036886005484794246
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.2307692307692286,
+          -1.8461538461538456,
+          -0.03692307692307696
+        ],
+        [
+          -3.2307692307692286,
+          1.8461538461538456,
+          0.03692307692307696
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        4.38088817641256e-05,
+        9.962159251821837e-06
+      ],
+      "sum_side_forces_relative": 3.3846722512303784e-05,
+      "endpoint_twisting_rows_N": [
+        [
+          0.0059442822779928045,
+          0.053155154872057575
+        ],
+        [
+          -0.00591746401918658,
+          -0.05318197312921713
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 5.811039910252585e-12,
+              "relative_RMS_error": 1.3356552658865365e-12
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.139103126710152,
+              "RMS_error": 6.7175141077163164e-12,
+              "relative_RMS_error": 3.1403414000182225e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700651,
+              "RMS_error": 0.0030993041758966213,
+              "relative_RMS_error": 0.03025739502773362
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309927,
+              "RMS_error": 1.7221373952203767e-05,
+              "relative_RMS_error": 0.0003834543708946434
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 3.4338563171039393e-05
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 2.519086703722006e-12,
+              "relative_RMS_error": 5.790067652288428e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.139103126710152,
+              "RMS_error": 4.282269073168153e-12,
+              "relative_RMS_error": 2.001899309901013e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700651,
+              "RMS_error": 0.0015641463958809808,
+              "relative_RMS_error": 0.015270200243474027
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309927,
+              "RMS_error": 4.517628243177913e-06,
+              "relative_RMS_error": 0.00010059036524794713
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 7.520304364815045e-06
+        }
+      ]
+    }
+  ],
+  "auxiliary_calibration": [
+    {
+      "spans": [
+        4,
+        8
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716665,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716665,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.05,
+      "calibration": [
+        {
+          "gamma": [
+            0.5121464758505682,
+            0.4878535241494318
+          ],
+          "eta": 2989156.7322673495,
+          "d": [
+            307185.63137450966,
+            322482.1196376102
+          ],
+          "kernel_traction_relative": [
+            2.516439977510334e-15,
+            2.8355022330550256e-15
+          ],
+          "leading_relative_gap": [
+            0.002235682027212471,
+            6.117372401259757e-05
+          ]
+        },
+        {
+          "gamma": [
+            0.4048721753898827,
+            0.5951278246101174
+          ],
+          "eta": 1405.4660042682626,
+          "d": [
+            182.70431869084177,
+            124.29580991268269
+          ],
+          "kernel_traction_relative": [
+            2.991135739371983e-15,
+            2.6257149627635503e-15
+          ],
+          "leading_relative_gap": [
+            0.01053330610093739,
+            0.09846293049273258
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 216,
+      "free_residual": 1.8164988273401705e-15,
+      "relative_displacement_L2": 8.09921541235986e-05,
+      "translation_jump_relative_L2": 3.1435137918494536e-05,
+      "rotation_jump_relative_L2": 0.00014988409501536515,
+      "side_force_resultants_N": [
+        [
+          3.2307692307677587,
+          -1.8461538461554357,
+          -0.033699930599010275
+        ],
+        [
+          -3.2307692307696145,
+          1.8461538461535423,
+          0.03483242362499941
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.230769230769231,
+          -1.8461538461538458,
+          -0.03692307692307695
+        ],
+        [
+          -3.230769230769231,
+          1.8461538461538458,
+          0.03692307692307695
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.0008661519072284679,
+        0.0005618185336366038
+      ],
+      "sum_side_forces_relative": 0.00030433337359186415,
+      "endpoint_twisting_rows_N": [
+        [
+          0.006490250197158862,
+          0.05260918695149447
+        ],
+        [
+          -0.006465395229732003,
+          -0.052634041918855956
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 1.6365267702781421e-12,
+              "relative_RMS_error": 3.761522261497041e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 4.6020330434881794e-12,
+              "relative_RMS_error": 2.151384375079619e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.012897795549016629,
+              "relative_RMS_error": 0.12591655183397446
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0003037508720567301,
+              "relative_RMS_error": 0.00676337439024764
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0005803064823370965
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 1.4426480533944986e-12,
+              "relative_RMS_error": 3.3158961203100195e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 1.8420059619471043e-12,
+              "relative_RMS_error": 8.611113409852427e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.010722550400515372,
+              "relative_RMS_error": 0.10468041365424163
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0002235525404751367,
+              "relative_RMS_error": 0.004977663164838437
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0005554515149102379
+        }
+      ]
+    },
+    {
+      "spans": [
+        4,
+        8
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716665,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 1.0982300837716665,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.2,
+      "calibration": [
+        {
+          "gamma": [
+            0.5121464758505682,
+            0.4878535241494318
+          ],
+          "eta": 629296.1541615473,
+          "d": [
+            307185.63137450966,
+            322482.1196376102
+          ],
+          "kernel_traction_relative": [
+            2.516439977510334e-15,
+            2.8355022330550256e-15
+          ],
+          "leading_relative_gap": [
+            0.002235682027212471,
+            6.117372401259757e-05
+          ]
+        },
+        {
+          "gamma": [
+            0.4048721753898827,
+            0.5951278246101174
+          ],
+          "eta": 295.88757984595003,
+          "d": [
+            182.70431869084177,
+            124.29580991268269
+          ],
+          "kernel_traction_relative": [
+            2.991135739371983e-15,
+            2.6257149627635503e-15
+          ],
+          "leading_relative_gap": [
+            0.01053330610093739,
+            0.09846293049273258
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 216,
+      "free_residual": 1.810073504309294e-15,
+      "relative_displacement_L2": 7.515691212210193e-05,
+      "translation_jump_relative_L2": 5.7336059056124026e-05,
+      "rotation_jump_relative_L2": 0.00026251991947707446,
+      "side_force_resultants_N": [
+        [
+          3.2307692307699454,
+          -1.8461538461536835,
+          -0.03393157556269625
+        ],
+        [
+          -3.2307692307694977,
+          1.8461538461540588,
+          0.035527274950757116
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.230769230769231,
+          -1.8461538461538458,
+          -0.03692307692307695
+        ],
+        [
+          -3.230769230769231,
+          1.8461538461538458,
+          0.03692307692307695
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.0008039022583067501,
+        0.0003750920432655699
+      ],
+      "sum_side_forces_relative": 0.00042881021504118024,
+      "endpoint_twisting_rows_N": [
+        [
+          0.006480669616196939,
+          0.05261876753209351
+        ],
+        [
+          -0.006234284367447468,
+          -0.052865152780750796
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 8.953747421938808e-13,
+              "relative_RMS_error": 2.057999958394839e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 4.2101586549662897e-13,
+              "relative_RMS_error": 1.968188724702269e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.012812090995758307,
+              "relative_RMS_error": 0.12507984902055594
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.000295389619397497,
+              "relative_RMS_error": 0.006577201156495457
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0005707259013751735
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 4.810168401960277e-13,
+              "relative_RMS_error": 1.1056070608883514e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 5.503230651819842e-13,
+              "relative_RMS_error": 2.5726813182137567e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.008421518477433113,
+              "relative_RMS_error": 0.08221626431078986
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.00014130486903819582,
+              "relative_RMS_error": 0.003146320950452248
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0003243406526451109
+        }
+      ]
+    },
+    {
+      "spans": [
+        4,
+        8
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716665,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 0.5491150418858333,
+      "end_weight_scale": 0.5,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.512146475850568,
+            0.4878535241494319
+          ],
+          "eta": 1415916.3468634803,
+          "d": [
+            307185.6313745095,
+            322482.1196376099
+          ],
+          "kernel_traction_relative": [
+            2.515938343520791e-15,
+            2.8427057263098613e-15
+          ],
+          "leading_relative_gap": [
+            0.0022356820272133593,
+            6.117372401215349e-05
+          ]
+        },
+        {
+          "gamma": [
+            0.4048721753898827,
+            0.5951278246101174
+          ],
+          "eta": 665.7470546533875,
+          "d": [
+            182.70431869084177,
+            124.29580991268269
+          ],
+          "kernel_traction_relative": [
+            2.991135739371983e-15,
+            2.6257149627635503e-15
+          ],
+          "leading_relative_gap": [
+            0.01053330610093739,
+            0.09846293049273258
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 216,
+      "free_residual": 1.6397663652347763e-15,
+      "relative_displacement_L2": 6.866350722294227e-05,
+      "translation_jump_relative_L2": 4.357638185761642e-05,
+      "rotation_jump_relative_L2": 0.00018965339515340037,
+      "side_force_resultants_N": [
+        [
+          3.2307692307692344,
+          -1.8461538461538132,
+          -0.033820162281814094
+        ],
+        [
+          -3.2307692307693654,
+          1.846153846153453,
+          0.03515344315079645
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.230769230769231,
+          -1.8461538461538458,
+          -0.03692307692307695
+        ],
+        [
+          -3.230769230769231,
+          1.8461538461538458,
+          0.03692307692307695
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.0008338422039449934,
+        0.00047555137522355747
+      ],
+      "sum_side_forces_relative": 0.00035829082872143597,
+      "endpoint_twisting_rows_N": [
+        [
+          0.006485794438473903,
+          0.0526136427097904
+        ],
+        [
+          -0.006353339220219266,
+          -0.052746097927981656
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 6.504835157346228e-13,
+              "relative_RMS_error": 1.4951226399778282e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 3.8971811808018737e-13,
+              "relative_RMS_error": 1.8218762490406764e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.012850958265532621,
+              "relative_RMS_error": 0.12545929623466187
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0002992362986860894,
+              "relative_RMS_error": 0.0066628520453696225
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0005758507236521375
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 5.118342266618616e-13,
+              "relative_RMS_error": 1.176440173635227e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 7.396981721110623e-13,
+              "relative_RMS_error": 3.45798275396234e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.009645353587967894,
+              "relative_RMS_error": 0.09416412753642765
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.00018354847279464072,
+              "relative_RMS_error": 0.004086925024651409
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0004433955054142513
+        }
+      ]
+    },
+    {
+      "spans": [
+        4,
+        8
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.2,
+      "quartic": 0.3,
+      "h": 1.0982300837716665,
+      "orthogonal_material_boundary_interior": false,
+      "end_weight_mm": 2.196460167543333,
+      "end_weight_scale": 2.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            0.5121464758505674,
+            0.4878535241494325
+          ],
+          "eta": 1415916.34686348,
+          "d": [
+            307185.6313745098,
+            322482.1196376094
+          ],
+          "kernel_traction_relative": [
+            2.5166996275859512e-15,
+            2.8318457668919677e-15
+          ],
+          "leading_relative_gap": [
+            0.0022356820272142475,
+            6.11737240117094e-05
+          ]
+        },
+        {
+          "gamma": [
+            0.4048721753898827,
+            0.5951278246101174
+          ],
+          "eta": 665.7470546533875,
+          "d": [
+            182.70431869084177,
+            124.29580991268269
+          ],
+          "kernel_traction_relative": [
+            2.991135739371983e-15,
+            2.6257149627635503e-15
+          ],
+          "leading_relative_gap": [
+            0.01053330610093739,
+            0.09846293049273258
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 216,
+      "free_residual": 1.6112074366240063e-15,
+      "relative_displacement_L2": 6.778666135540081e-05,
+      "translation_jump_relative_L2": 4.3455874728647774e-05,
+      "rotation_jump_relative_L2": 0.00019508381678649543,
+      "side_force_resultants_N": [
+        [
+          3.2307692307712306,
+          -1.8461538461533094,
+          -0.03383575318622828
+        ],
+        [
+          -3.230769230770275,
+          1.8461538461536748,
+          0.03511980006156773
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          3.230769230769231,
+          -1.8461538461538458,
+          -0.03692307692307695
+        ],
+        [
+          -3.230769230769231,
+          1.8461538461538458,
+          0.03692307692307695
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        0.0008296524805393476,
+        0.0004845922387062145
+      ],
+      "sum_side_forces_relative": 0.0003450602418331331,
+      "endpoint_twisting_rows_N": [
+        [
+          0.00648283504982489,
+          0.05261660209826688
+        ],
+        [
+          -0.006366555085090382,
+          -0.052732882063003805
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 4.52737414493589e-12,
+              "relative_RMS_error": 1.0406073974218041e-12
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 2.8090497749602516e-12,
+              "relative_RMS_error": 1.3131904394345162e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.012841415285928024,
+              "relative_RMS_error": 0.12536613154760615
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.0002985090821351619,
+              "relative_RMS_error": 0.006646659704049237
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.005909943714821765,
+            0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0005728913351290277
+        },
+        {
+          "side": 2,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 4.350703402794229,
+              "RMS_error": 1.3131410919547162e-12,
+              "relative_RMS_error": 3.018227101188636e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 2.1391031267101517,
+              "RMS_error": 1.983023322732527e-12,
+              "relative_RMS_error": 9.270349325244227e-13
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10243129565700657,
+              "RMS_error": 0.009700940935308907,
+              "relative_RMS_error": 0.0947068068707509
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.04491114265309928,
+              "RMS_error": 0.00018604210229671844,
+              "relative_RMS_error": 0.004142448650967019
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            -0.005909943714821765,
+            -0.05318949343339591
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.00045661137039210153
+        }
+      ]
+    }
+  ],
+  "orthogonal_T_patch_test": {
+    "spans": [
+      2,
+      4
+    ],
+    "transverse_spans": [
+      1,
+      1
+    ],
+    "amplitude": 0.0,
+    "quartic": 0.0,
+    "h": 1.0,
+    "orthogonal_material_boundary_interior": true,
+    "end_weight_mm": 1.0,
+    "end_weight_scale": 1.0,
+    "target_interface_compliance_ratio": 0.1,
+    "calibration": [
+      {
+        "gamma": [
+          1.0,
+          0.0
+        ],
+        "eta": 1999093.4792155828,
+        "d": [
+          222121.4976906203,
+          0.0
+        ],
+        "kernel_traction_relative": [
+          2.2344081737677936e-15
+        ],
+        "leading_relative_gap": [
+          0.002085677075190473
+        ]
+      },
+      {
+        "gamma": [
+          1.0,
+          0.0
+        ],
+        "eta": 722.5279138246499,
+        "d": [
+          80.28087931385,
+          0.0
+        ],
+        "kernel_traction_relative": [
+          4.601488961752053e-15
+        ],
+        "leading_relative_gap": [
+          0.3097244991035457
+        ]
+      }
+    ],
+    "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+    "dofs": 144,
+    "free_residual": 6.740874753161284e-16,
+    "relative_displacement_L2": 4.471789612792948e-12,
+    "translation_jump_relative_L2": 4.3729646474150116e-15,
+    "rotation_jump_relative_L2": 8.464809200121285e-14,
+    "side_force_resultants_N": [
+      [
+        2.42307692307719,
+        -1.8461538461541545,
+        1.1013412404281553e-13
+      ],
+      [
+        -2.4230769230770552,
+        1.8461538461540499,
+        4.529709940470639e-14
+      ]
+    ],
+    "exact_side_force_resultants_N": [
+      [
+        2.423076923076923,
+        -1.8461538461538454,
+        0.0
+      ],
+      [
+        -2.423076923076923,
+        1.8461538461538454,
+        0.0
+      ]
+    ],
+    "relative_resultant_error_by_side": [
+      1.3884765069055547e-13,
+      8.133422584888273e-14
+    ],
+    "sum_side_forces_relative": 7.571852540210279e-14,
+    "endpoint_twisting_rows_N": [
+      [
+        0.026923076923056878,
+        0.02692307692299712
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "active_edge_force_and_moment_checks": [
+      {
+        "side": 1,
+        "trace_errors_by_row": {
+          "Fx_N_per_mm": {
+            "exact_RMS": 2.4230769230769225,
+            "RMS_error": 1.8668349449314254e-12,
+            "relative_RMS_error": 7.704398185431281e-13
+          },
+          "Fy_N_per_mm": {
+            "exact_RMS": 1.846153846153846,
+            "RMS_error": 2.2959766438597864e-12,
+            "relative_RMS_error": 1.2436540154240511e-12
+          },
+          "Fz_N_per_mm": {
+            "exact_RMS": 0.0,
+            "RMS_error": 3.400957405858176e-13,
+            "relative_RMS_error": null
+          },
+          "M_about_t_N": {
+            "exact_RMS": 0.01384615384615385,
+            "RMS_error": 6.272913625878013e-14,
+            "relative_RMS_error": 4.530437618689675e-12
+          }
+        },
+        "exact_endpoint_twisting_N": [
+          0.02692307692307693,
+          0.02692307692307693
+        ],
+        "maximum_endpoint_twisting_absolute_error_N": 7.981115768274094e-14
+      }
+    ],
+    "drop_endpoint_work_relative_residual": 0.0022717099943574642,
+    "retained_endpoint_work_relative_residual": 1.699303862851873e-14
+  },
+  "orthogonal_T_refinement": [
+    {
+      "spans": [
+        1,
+        2
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.0,
+      "quartic": 0.3,
+      "h": 1.0,
+      "orthogonal_material_boundary_interior": true,
+      "end_weight_mm": 1.0,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 2000076.9230768497,
+          "d": [
+            222230.76923076107,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            2.153964790832904e-15
+          ],
+          "leading_relative_gap": [
+            0.007339124941237007
+          ]
+        },
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 707.7933993336793,
+          "d": [
+            78.64371103707548,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            1.3578502628243383e-15
+          ],
+          "leading_relative_gap": [
+            0.2953546640919499
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 108,
+      "free_residual": 1.5617148672316976e-15,
+      "relative_displacement_L2": 0.024094840985026764,
+      "translation_jump_relative_L2": 2.689022572036715e-05,
+      "rotation_jump_relative_L2": 0.0040028918175904135,
+      "side_force_resultants_N": [
+        [
+          2.42307692307705,
+          -1.8461538461537428,
+          -0.04615384615485141
+        ],
+        [
+          -2.4230769230767795,
+          1.846153846153788,
+          0.04615384615494378
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          2.4230769230769234,
+          -1.8461538461538458,
+          -0.04615384615384617
+        ],
+        [
+          -2.4230769230769234,
+          1.8461538461538458,
+          0.04615384615384617
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        3.342749049582603e-13,
+        3.6385036905273394e-13
+      ],
+      "sum_side_forces_relative": 9.49773383893805e-14,
+      "endpoint_twisting_rows_N": [
+        [
+          0.028334711597056056,
+          0.05781913455679893
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 2.4230769230769225,
+              "RMS_error": 1.5927191189994224e-12,
+              "relative_RMS_error": 6.573126522854761e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 1.846153846153846,
+              "RMS_error": 5.0014973344281866e-12,
+              "relative_RMS_error": 2.7091443894819345e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.1052672001715286,
+              "RMS_error": 0.019067732528615402,
+              "relative_RMS_error": 0.181136503084962
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.01384615384615385,
+              "RMS_error": 0.00035025779955942066,
+              "relative_RMS_error": 0.025296396634847042
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.02692307692307693,
+            0.059230769230769253
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.0014116346739791244
+        }
+      ]
+    },
+    {
+      "spans": [
+        2,
+        4
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.0,
+      "quartic": 0.3,
+      "h": 1.0,
+      "orthogonal_material_boundary_interior": true,
+      "end_weight_mm": 1.0,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 1999093.4792155828,
+          "d": [
+            222121.4976906203,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            2.2344081737677936e-15
+          ],
+          "leading_relative_gap": [
+            0.002085677075190473
+          ]
+        },
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 722.5279138246499,
+          "d": [
+            80.28087931385,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            4.601488961752053e-15
+          ],
+          "leading_relative_gap": [
+            0.3097244991035457
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 144,
+      "free_residual": 7.675921876531503e-16,
+      "relative_displacement_L2": 0.0012487518031159188,
+      "translation_jump_relative_L2": 6.394874031106901e-06,
+      "rotation_jump_relative_L2": 0.0005405019271126449,
+      "side_force_resultants_N": [
+        [
+          2.4230769230771982,
+          -1.8461538461538889,
+          -0.046153846153897504
+        ],
+        [
+          -2.423076923076994,
+          1.846153846153998,
+          0.04615384615394902
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          2.423076923076923,
+          -1.8461538461538454,
+          -0.04615384615384616
+        ],
+        [
+          -2.423076923076923,
+          1.8461538461538454,
+          0.04615384615384616
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        9.303585506897504e-14,
+        6.473635519489069e-14
+      ],
+      "sum_side_forces_relative": 7.786224974958591e-14,
+      "endpoint_twisting_rows_N": [
+        [
+          0.027036150687142713,
+          0.059117695466655656
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 2.4230769230769225,
+              "RMS_error": 1.852545594457943e-12,
+              "relative_RMS_error": 7.645426262842306e-13
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 1.846153846153846,
+              "RMS_error": 2.9364248302378656e-12,
+              "relative_RMS_error": 1.5905634497121773e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10526720017152859,
+              "RMS_error": 0.004451085723785545,
+              "relative_RMS_error": 0.04228369061334094
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.01384615384615385,
+              "RMS_error": 1.0043949620155761e-05,
+              "relative_RMS_error": 0.0007253963614556937
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.02692307692307693,
+            0.059230769230769253
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 0.00011307376411359704
+        }
+      ]
+    },
+    {
+      "spans": [
+        4,
+        8
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.0,
+      "quartic": 0.3,
+      "h": 1.0,
+      "orthogonal_material_boundary_interior": true,
+      "end_weight_mm": 1.0,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 1999875.981537004,
+          "d": [
+            222208.44239300044,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            2.1971036122453315e-15
+          ],
+          "leading_relative_gap": [
+            7.5110584523141455e-06
+          ]
+        },
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 729.3705268293003,
+          "d": [
+            81.04116964770003,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            6.894541787994671e-15
+          ],
+          "leading_relative_gap": [
+            0.27580239301245546
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 216,
+      "free_residual": 1.0395335889747647e-15,
+      "relative_displacement_L2": 6.665730759949807e-05,
+      "translation_jump_relative_L2": 6.077924848908732e-07,
+      "rotation_jump_relative_L2": 4.161057785229707e-05,
+      "side_force_resultants_N": [
+        [
+          2.423076923077664,
+          -1.846153846153665,
+          -0.04615384615413998
+        ],
+        [
+          -2.423076923077733,
+          1.8461538461537366,
+          0.046153846154080025
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          2.4230769230769216,
+          -1.846153846153846,
+          -0.04615384615384618
+        ],
+        [
+          -2.4230769230769216,
+          1.846153846153846,
+          0.04615384615384618
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        2.687524816415052e-13,
+        2.7947463905127613e-13
+      ],
+      "sum_side_forces_relative": 3.805887232712335e-14,
+      "endpoint_twisting_rows_N": [
+        [
+          0.026927283381470137,
+          0.059226562772425474
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 2.4230769230769216,
+              "RMS_error": 3.636876192095962e-12,
+              "relative_RMS_error": 1.500933031658652e-12
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 1.8461538461538456,
+              "RMS_error": 7.141201203647408e-12,
+              "relative_RMS_error": 3.86815065197568e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10526720017152859,
+              "RMS_error": 0.0010966835553735076,
+              "relative_RMS_error": 0.01041809370427357
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.013846153846153852,
+              "RMS_error": 9.591190698041524e-07,
+              "relative_RMS_error": 6.926971059696654e-05
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.02692307692307693,
+            0.059230769230769253
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 4.206458393204993e-06
+        }
+      ]
+    },
+    {
+      "spans": [
+        8,
+        16
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.0,
+      "quartic": 0.3,
+      "h": 1.0,
+      "orthogonal_material_boundary_interior": true,
+      "end_weight_mm": 1.0,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 2000075.2605717145,
+          "d": [
+            222230.58450796828,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            4.549956593815859e-15
+          ],
+          "leading_relative_gap": [
+            4.0308655746557065e-08
+          ]
+        },
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 732.878851015274,
+          "d": [
+            81.43098344614155,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            1.304091381214832e-14
+          ],
+          "leading_relative_gap": [
+            0.26349977161804594
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 360,
+      "free_residual": 2.7405008759333223e-15,
+      "relative_displacement_L2": 4.016715275745185e-06,
+      "translation_jump_relative_L2": 6.039168668222705e-08,
+      "rotation_jump_relative_L2": 2.673811264881885e-06,
+      "side_force_resultants_N": [
+        [
+          2.423076923077031,
+          -1.8461538461565659,
+          -0.04615384615355467
+        ],
+        [
+          -2.4230769230771503,
+          1.8461538461565523,
+          0.0461538461535691
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          2.4230769230769234,
+          -1.8461538461538498,
+          -0.04615384615384615
+        ],
+        [
+          -2.4230769230769234,
+          1.8461538461538498,
+          0.04615384615384615
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        8.973173224209965e-13,
+        8.948133595103416e-13
+      ],
+      "sum_side_forces_relative": 3.974561931708319e-14,
+      "endpoint_twisting_rows_N": [
+        [
+          0.026923213674643433,
+          0.059230632478568315
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 2.4230769230769207,
+              "RMS_error": 3.80137878096415e-12,
+              "relative_RMS_error": 1.5688229889693334e-12
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 1.8461538461538463,
+              "RMS_error": 1.1512910462382413e-11,
+              "relative_RMS_error": 6.236159833790473e-12
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10526720017152859,
+              "RMS_error": 0.00027414167341897866,
+              "relative_RMS_error": 0.002604245890194439
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.013846153846153857,
+              "RMS_error": 6.258664158727665e-08,
+              "relative_RMS_error": 4.520146336858866e-06
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.02692307692307693,
+            0.059230769230769253
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 1.3675220093822826e-07
+        }
+      ]
+    },
+    {
+      "spans": [
+        16,
+        32
+      ],
+      "transverse_spans": [
+        1,
+        1
+      ],
+      "amplitude": 0.0,
+      "quartic": 0.3,
+      "h": 1.0,
+      "orthogonal_material_boundary_interior": true,
+      "end_weight_mm": 1.0,
+      "end_weight_scale": 1.0,
+      "target_interface_compliance_ratio": 0.1,
+      "calibration": [
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 2000076.903745055,
+          "d": [
+            222230.7670827839,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            6.601572762230918e-15
+          ],
+          "leading_relative_gap": [
+            2.2087776052615027e-10
+          ]
+        },
+        {
+          "gamma": [
+            1.0,
+            0.0
+          ],
+          "eta": 733.4378728296437,
+          "d": [
+            81.49309698107152,
+            0.0
+          ],
+          "kernel_traction_relative": [
+            1.6690441152524302e-14
+          ],
+          "leading_relative_gap": [
+            0.261362205688884
+          ]
+        }
+      ],
+      "condition_scope": "Each side isolated and diagonally equilibrated before rigid-mode removal.",
+      "dofs": 648,
+      "free_residual": 5.820298858683507e-15,
+      "relative_displacement_L2": 2.505107978143673e-07,
+      "translation_jump_relative_L2": 4.230632315844813e-09,
+      "rotation_jump_relative_L2": 1.6779990514680956e-07,
+      "side_force_resultants_N": [
+        [
+          2.4230769230773044,
+          -1.8461538461113507,
+          -0.04615384615471951
+        ],
+        [
+          -2.42307692307723,
+          1.8461538461122746,
+          0.04615384615462659
+        ]
+      ],
+      "exact_side_force_resultants_N": [
+        [
+          2.4230769230769287,
+          -1.8461538461538454,
+          -0.04615384615384617
+        ],
+        [
+          -2.4230769230769287,
+          1.8461538461538454,
+          0.04615384615384617
+        ]
+      ],
+      "relative_resultant_error_by_side": [
+        1.3951761170118465e-11,
+        1.3647767865746635e-11
+      ],
+      "sum_side_forces_relative": 3.057666126979106e-13,
+      "endpoint_twisting_rows_N": [
+        [
+          0.026923080719119162,
+          0.059230765447895184
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "active_edge_force_and_moment_checks": [
+        {
+          "side": 1,
+          "trace_errors_by_row": {
+            "Fx_N_per_mm": {
+              "exact_RMS": 2.4230769230769202,
+              "RMS_error": 6.506673693769417e-11,
+              "relative_RMS_error": 2.6852939053651594e-11
+            },
+            "Fy_N_per_mm": {
+              "exact_RMS": 1.8461538461538465,
+              "RMS_error": 1.3267805176318125e-10,
+              "relative_RMS_error": 7.186727803838984e-11
+            },
+            "Fz_N_per_mm": {
+              "exact_RMS": 0.10526720017152859,
+              "RMS_error": 6.853374844726182e-05,
+              "relative_RMS_error": 0.0006510456090367074
+            },
+            "M_about_t_N": {
+              "exact_RMS": 0.01384615384615384,
+              "RMS_error": 4.952326866198634e-09,
+              "relative_RMS_error": 3.5766805144767933e-07
+            }
+          },
+          "exact_endpoint_twisting_N": [
+            0.02692307692307693,
+            0.059230769230769253
+          ],
+          "maximum_endpoint_twisting_absolute_error_N": 3.796042230552743e-09
+        }
+      ]
+    }
+  ]
+}

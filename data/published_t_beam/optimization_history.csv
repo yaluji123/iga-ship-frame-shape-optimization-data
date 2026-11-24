@@ -1,0 +1,13 @@
+method,phase,evaluation_index,web_offset_m,energy_relative_to_start,cumulative_structural_evaluations
+analytical,optimization,1,0.5,1.0,1
+analytical,optimization,2,-0.18697046504089931,0.5493958048547017,2
+analytical,optimization,3,0.004839145487220198,0.4745512955362921,3
+analytical,optimization,4,-3.356233112845018e-05,0.4745009480762766,4
+analytical,optimization,5,1.6348687603484147e-10,0.4745009456543197,5
+analytical,independent_endpoint_check,6,1.6348687603484147e-10,0.4745009456543197,8
+centered_finite_difference,optimization,1,0.5,1.0,3
+centered_finite_difference,optimization,2,-0.18697039945814953,0.549395752497922,6
+centered_finite_difference,optimization,3,0.0048391321970692736,0.47455129525973294,9
+centered_finite_difference,optimization,4,-3.3562114281114955e-05,0.47450094807624527,12
+centered_finite_difference,optimization,5,1.6349093402061397e-10,0.4745009456543197,15
+centered_finite_difference,independent_endpoint_check,6,1.6349093402061397e-10,0.4745009456543197,18

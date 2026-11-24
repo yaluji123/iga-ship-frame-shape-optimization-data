@@ -1,0 +1,333 @@
+{
+  "left": {
+    "beta": [
+      3.6532687200667606,
+      0.5990834147141468,
+      -4.765645661164733
+    ],
+    "ks": 54.4244862111624,
+    "maximum_von_mises": 50.57322941097085,
+    "volume": 224985310.9054685,
+    "compliance": 3212.5358077091387,
+    "stress_gradient": [
+      -0.0693276975350848,
+      0.06575578591516723,
+      0.409142855219683
+    ],
+    "compliance_gradient": [
+      27.645938159399932,
+      -1.5873237681158159,
+      -30.126789702424457
+    ],
+    "volume_gradient": [
+      -69603.18511068853,
+      1383.5133003827898,
+      -37384.18251834858
+    ],
+    "bulk": [
+      [
+        0.014183624857714405,
+        -0.22138096172527844,
+        -0.7700769151778043
+      ],
+      [
+        -27.56718984326433,
+        1.4630378785321607,
+        30.356867848555677
+      ]
+    ],
+    "affine": [
+      [
+        -6.733801746067078e-06,
+        -1.7469102020354484e-05,
+        -3.130162961921419e-05
+      ],
+      [
+        9.884502921066522e-05,
+        -0.00010803502019216855,
+        0.00019049683497689143
+      ]
+    ],
+    "interface": [
+      [
+        0.003668984813457234,
+        0.008433069541001068,
+        0.01189448346249376
+      ],
+      [
+        -0.07864947110639015,
+        0.12417785456346302,
+        -0.22988764929624295
+      ]
+    ],
+    "explicit": [
+      -0.0514683540621671,
+      -0.14717463716708978,
+      -0.34900827486600833
+    ],
+    "adjoint": {
+      "primal_relative": 7.115786114416841e-19,
+      "native_full_state_relative_gap": 0,
+      "factorization_s": 4.1752363,
+      "adjoints": [
+        {
+          "iterations": 0,
+          "residual": 1.0209592743681163e-12
+        },
+        {
+          "iterations": 1,
+          "residual": 6.41886357475402e-20
+        }
+      ],
+      "total_s": 12.174092,
+      "projected_adjoint_residual_iterations": [
+        [
+          1.0209592743681163e-12,
+          6.41886357475402e-20
+        ]
+      ]
+    },
+    "elapsed_s": 30.86075210000854,
+    "retained_field_publication": {
+      "samples_file": {
+        "bytes": 10784898
+      }
+    },
+    "timings_s": {
+      "read_and_weak_restriction": 1.6927153999567963,
+      "active_projection_and_coupling": 15.668018600030337,
+      "global_assembly": 8.63736809999682,
+      "full_equilibrium": 7.444682199973613,
+      "penalty_shape_directions": 30.294988300011028,
+      "adjoints_and_shape_directions": 30.899377900001127,
+      "total": 94.63715049996972
+    },
+    "selection": {
+      "bytes": 98
+    },
+    "restriction": {
+      "strong": 492,
+      "weak": 153,
+      "minimum_strong_score": 0.0030679540808787203,
+      "maximum_weak_score": 0.0009971076026681369,
+      "native_threshold": 0.001,
+      "nearest_donors": 8,
+      "maximum_donor_condition_one": 694.815271925236,
+      "scope": "Same original planar B4A, same local control ownership. Portfolio changes or failed donor conditioning require the native full reduction.",
+      "reduced_dofs": 18915,
+      "weak_sets_changed": true
+    },
+    "reduced_dofs": 18915
+  },
+  "right": {
+    "beta": [
+      3.6352879904339392,
+      0.04881663906900813,
+      -4.752036097802865
+    ],
+    "ks": 54.39812997872098,
+    "maximum_von_mises": 50.26763260967518,
+    "volume": 224985501.55075857,
+    "compliance": 3212.8919880961143,
+    "stress_gradient": [
+      -0.07880464815130861,
+      0.05443064397444031,
+      0.39044307252906174
+    ],
+    "compliance_gradient": [
+      27.482252281183385,
+      -2.9939360420226286,
+      -30.045476906366407
+    ],
+    "volume_gradient": [
+      -69661.09501487738,
+      627.1279515742799,
+      -37296.07342772984
+    ],
+    "bulk": [
+      [
+        0.03937619966110689,
+        -0.17601216618259574,
+        -0.6924489932825197
+      ],
+      [
+        -27.404068360852655,
+        2.875451489070983,
+        30.27270071834529
+      ]
+    ],
+    "affine": [
+      [
+        -6.29384084462638e-06,
+        -1.5949734918694442e-05,
+        -2.80328990110221e-05
+      ],
+      [
+        7.632770463138384e-05,
+        -7.348511010202763e-05,
+        0.0001521159396715096
+      ]
+    ],
+    "interface": [
+      [
+        0.004382948901486924,
+        0.009589736688961974,
+        0.01323993071301751
+      ],
+      [
+        -0.07810759262610113,
+        0.11841106784154394,
+        -0.22707169603921468
+      ]
+    ],
+    "explicit": [
+      -0.03503920574787017,
+      -0.11197583578427475,
+      -0.28873795714142947
+    ],
+    "adjoint": {
+      "primal_relative": 5.04084114825368e-19,
+      "native_full_state_relative_gap": 0,
+      "factorization_s": 4.1029175,
+      "adjoints": [
+        {
+          "iterations": 0,
+          "residual": 1.2708340457764336e-12
+        },
+        {
+          "iterations": 1,
+          "residual": 7.86432378702648e-19
+        }
+      ],
+      "total_s": 9.1544793,
+      "projected_adjoint_residual_iterations": [
+        [
+          1.2708340457764336e-12,
+          7.86432378702648e-19
+        ]
+      ]
+    },
+    "elapsed_s": 26.757815700024366,
+    "retained_field_publication": {
+      "samples_file": {
+        "bytes": 10784758
+      }
+    },
+    "timings_s": {
+      "read_and_weak_restriction": 1.6774126999662258,
+      "active_projection_and_coupling": 16.8727183000301,
+      "global_assembly": 6.691155699954834,
+      "full_equilibrium": 8.815901900001336,
+      "penalty_shape_directions": 29.680262400011998,
+      "adjoints_and_shape_directions": 26.78771050000796,
+      "total": 90.52516149997246
+    },
+    "selection": {
+      "bytes": 99
+    },
+    "restriction": {
+      "strong": 493,
+      "weak": 152,
+      "minimum_strong_score": 0.0010068333691306385,
+      "maximum_weak_score": 0.000949102617740739,
+      "native_threshold": 0.001,
+      "nearest_donors": 8,
+      "maximum_donor_condition_one": 690.2583737858321,
+      "scope": "Same original planar B4A, same local control ownership. Portfolio changes or failed donor conditioning require the native full reduction.",
+      "reduced_dofs": 18918,
+      "weak_sets_changed": false
+    },
+    "reduced_dofs": 18918
+  },
+  "subsequent_comparison_counted": false,
+  "probes": [
+    {
+      "fraction": 0.25,
+      "result": {
+        "beta": [
+          3.6487735376585553,
+          0.46151672080286216,
+          -4.762243270324266
+        ],
+        "ks": 54.417325653192904,
+        "maximum_von_mises": 50.498619213562584,
+        "volume": 224985319.33796862,
+        "compliance": 3212.551774412469,
+        "state_relative_residual": 1.8561991325898387e-19,
+        "timings_s": {
+          "read_and_weak_restriction": 1.4672949999803677,
+          "active_projection_and_coupling": 16.936760500015225,
+          "global_assembly": 7.118917100015096,
+          "full_equilibrium": 11.847203899989836,
+          "penalty_shape_directions": 0.2402068999945186,
+          "adjoints_and_shape_directions": 3.5016395000275224,
+          "total": 41.112022900022566
+        },
+        "selection": {
+          "bytes": 99
+        },
+        "restriction": {
+          "strong": 492,
+          "weak": 153,
+          "minimum_strong_score": 0.003074210103244196,
+          "maximum_weak_score": 0.0009995012361156607,
+          "native_threshold": 0.001,
+          "nearest_donors": 8,
+          "maximum_donor_condition_one": 694.1102918712164,
+          "scope": "Same original planar B4A, same local control ownership. Portfolio changes or failed donor conditioning require the native full reduction.",
+          "reduced_dofs": 18915,
+          "weak_sets_changed": true
+        },
+        "reduced_dofs": 18915
+      }
+    },
+    {
+      "fraction": 0.5,
+      "result": {
+        "beta": [
+          3.64427835525035,
+          0.3239500268915775,
+          -4.758840879483799
+        ],
+        "ks": 54.41053782145754,
+        "maximum_von_mises": 50.42280172782023,
+        "volume": 224985353.9212372,
+        "compliance": 3212.616831119587,
+        "state_relative_residual": 8.578992670881445e-20,
+        "timings_s": {
+          "read_and_weak_restriction": 1.4438374000019394,
+          "active_projection_and_coupling": 16.80278399999952,
+          "global_assembly": 7.604062800004613,
+          "full_equilibrium": 9.297017799981404,
+          "penalty_shape_directions": 0.18746220000321046,
+          "adjoints_and_shape_directions": 2.9357337999972515,
+          "total": 38.27089799998794
+        },
+        "selection": {
+          "bytes": 96
+        },
+        "restriction": {
+          "strong": 493,
+          "weak": 152,
+          "minimum_strong_score": 0.0010019198576774484,
+          "maximum_weak_score": 0.0009506680166211945,
+          "native_threshold": 0.001,
+          "nearest_donors": 8,
+          "maximum_donor_condition_one": 693.1130013684112,
+          "scope": "Same original planar B4A, same local control ownership. Portfolio changes or failed donor conditioning require the native full reduction.",
+          "reduced_dofs": 18918,
+          "weak_sets_changed": false
+        },
+        "reduced_dofs": 18918
+      }
+    }
+  ],
+  "side_slope_ks": [
+    -0.029368406097938848,
+    -0.023220650149098767
+  ],
+  "side_slope_c": [
+    -0.03365506104870675,
+    0.7444067626678771
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "domain": "unit planar square, single unit-weight bicubic cell, in-plane degrees of freedom only",
+  "E": 1,
+  "thickness": 1,
+  "displacement_dofs": 32,
+  "independent_rigid_modes": 3,
+  "coordinates": "x=xi, y=eta; e1=(cos(theta),sin(theta)); e2=(-sin(theta),cos(theta))",
+  "strain_spaces": [
+    "Q(2,3)",
+    "Q(3,2)",
+    "Q(2,2)"
+  ],
+  "rank_method": "exact rational row reduction of strain and constitutively weighted cross-Gram matrices",
+  "witness": "u_x=0; u_y=P3(xi)*P3(eta); shifted Legendre P3; nonzero compatible strain",
+  "rows": [
+    {
+      "director_degrees": 0,
+      "poisson": "0",
+      "compatible_rank": 29,
+      "projected_rank": 29,
+      "compatible_nonrigid_nullity": 0,
+      "projected_nonrigid_nullity": 0,
+      "test_displacement_annihilated": false
+    },
+    {
+      "director_degrees": 0,
+      "poisson": "3/10",
+      "compatible_rank": 29,
+      "projected_rank": 29,
+      "compatible_nonrigid_nullity": 0,
+      "projected_nonrigid_nullity": 0,
+      "test_displacement_annihilated": false
+    },
+    {
+      "director_degrees": 45,
+      "poisson": "0",
+      "compatible_rank": 29,
+      "projected_rank": 29,
+      "compatible_nonrigid_nullity": 0,
+      "projected_nonrigid_nullity": 0,
+      "test_displacement_annihilated": false
+    },
+    {
+      "director_degrees": 45,
+      "poisson": "3/10",
+      "compatible_rank": 29,
+      "projected_rank": 29,
+      "compatible_nonrigid_nullity": 0,
+      "projected_nonrigid_nullity": 0,
+      "test_displacement_annihilated": false
+    },
+    {
+      "director_degrees": 90,
+      "poisson": "0",
+      "compatible_rank": 29,
+      "projected_rank": 26,
+      "compatible_nonrigid_nullity": 0,
+      "projected_nonrigid_nullity": 3,
+      "test_displacement_annihilated": true
+    },
+    {
+      "director_degrees": 90,
+      "poisson": "3/10",
+      "compatible_rank": 29,
+      "projected_rank": 29,
+      "compatible_nonrigid_nullity": 0,
+      "projected_nonrigid_nullity": 0,
+      "test_displacement_annihilated": false
+    }
+  ]
+}

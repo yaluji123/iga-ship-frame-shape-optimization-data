@@ -1,0 +1,431 @@
+{
+  "scope": "Two independent coplanar cubic Kirchhoff\u2013Love shells joined only along the shared moving cut; retained edge on shell one, interior trace on the uncut shell two. Fixed carrier coordinates. This evaluates the equations and is not a production-code derivative replay.",
+  "geometry": {
+    "length_mm": 1.0,
+    "carrier_width_mm": 2.0,
+    "trim": "y=4*a*x*(1-x)",
+    "analysis_spans_longitudinal": [
+      3,
+      5
+    ],
+    "transverse_spans": [
+      1,
+      1
+    ],
+    "thickness_mm": 0.1,
+    "young_modulus_MPa": 210000.0,
+    "poisson_ratio": 0.3
+  },
+  "method": "Analytic polynomial transverse basis with complex-step directions for the moving quadrature, projected bulk matrices, recovered stress and physical trace rows. The leading simple generalized eigenvalue direction is computed at its normalized real witness, rather than with a complex eigensolve. The state factorization is reused in transpose mode for the two adjoints. Reference differences are real, independently assembled state solves with recomputed spectral calibration.",
+  "endpoint_omission_scope": "Each omission alters only the named derivative contribution. The full forward operator, original state and adjoints, moving sample convention, and all other directional components retain their original values. The endpoint length omission removes the explicit h' in the endpoint jump penalty, preserving its indirect contribution through eta'. The skew endpoint-work product w_e V_e already cancels its h factors exactly.",
+  "responses": [
+    "unweighted KS over both faces (MPa)",
+    "compliance (N mm)"
+  ],
+  "load_definition": "Exterior edge load intensity factor 1+.3*x+.24*sin(2*pi*x), where x is the numerical coordinate on [0,1]. At y=-1 on the active side, the intensity multiplier is (.025,-.018,.025) N/mm; at y=1 on the receiving side it is (.013,-.058,-.062) N/mm. Six displacement values at three exterior corners are zero. There are no fixed interface endpoints.",
+  "shape_units": "a is the mid-span trim height in mm; x represents x/(1 mm) in the trim formula.",
+  "sharpness_per_MPa": 0.5,
+  "shape_value": 0.2,
+  "complex_step": 1e-24,
+  "spectral_gap_floor": 1e-06,
+  "base": {
+    "a": 0.2,
+    "response": [
+      38.73468228318803,
+      8.664267811192253e-05
+    ],
+    "eta": [
+      2666482.740910181,
+      1521.3305179708195
+    ],
+    "spectral_gaps": [
+      0.006051618967934269,
+      0.0009905435909491889
+    ],
+    "rigid_traction_relative": [
+      1.6545131970297361e-15,
+      1.0990005624540942e-15
+    ],
+    "free_residual": 1.6241582238303583e-11,
+    "h": 1.0982300837716665,
+    "min_vm": 0.4265046370118794,
+    "sample_count": 1600,
+    "free_dofs": 162,
+    "skew_fraction": 0.006745978548974103,
+    "transpose_adjoint_residual": 1.059889591948718e-12,
+    "eta_shape_direction": [
+      6158999.336075819,
+      5151.443641266092
+    ],
+    "chain_length_direction": 0.9119738185745151,
+    "endpoint_S_direction_norm": 1041.0483048437854,
+    "frozen_state_explicit_part": [
+      -0.016849308640553257,
+      0.0
+    ],
+    "adjoint_derivative": [
+      -3.2432407273592054,
+      -1.84830699554901e-05
+    ]
+  },
+  "real_differences": [
+    {
+      "h": 0.004,
+      "plus": {
+        "a": 0.20400000000000001,
+        "response": [
+          38.72154089312906,
+          8.656817577277454e-05
+        ],
+        "eta": [
+          2691206.0043542194,
+          1541.8519557136708
+        ],
+        "spectral_gaps": [
+          0.006383396707683842,
+          0.00014174776238606857
+        ],
+        "rigid_traction_relative": [
+          1.4244579883859658e-15,
+          1.5098322948077226e-15
+        ],
+        "free_residual": 1.8969059538968782e-11,
+        "h": 1.1019048390837445,
+        "min_vm": 0.41423468355180254,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.006738220424579534
+      },
+      "minus": {
+        "a": 0.196,
+        "response": [
+          38.74748690923418,
+          8.671604003861637e-05
+        ],
+        "eta": [
+          2641938.488561478,
+          1500.6431853777933
+        ],
+        "spectral_gaps": [
+          0.005724175934829767,
+          0.0018829313422610294
+        ],
+        "rigid_traction_relative": [
+          2.158596856066063e-15,
+          1.7410099185615485e-15
+        ],
+        "free_residual": 8.02198998144154e-12,
+        "h": 1.0946093156494028,
+        "min_vm": 0.439146816779597,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.0067533636699970805
+      },
+      "centered_fd": [
+        -3.243252013140463,
+        -1.8483033230229148e-05
+      ],
+      "absolute_error": [
+        1.1285781257530658e-05,
+        3.6725260951498946e-11
+      ],
+      "relative_error": [
+        3.4797852537822738e-06,
+        1.986967589255393e-06
+      ],
+      "forward_Taylor_remainder": [
+        0.00016842714953237137,
+        5.700593260331988e-10
+      ],
+      "eta_centered_fd": [
+        6158439.47409268,
+        5151.096291984686
+      ],
+      "chain_length_centered_fd": 0.9119404292927125
+    },
+    {
+      "h": 0.002,
+      "plus": {
+        "a": 0.202,
+        "response": [
+          38.72815369897671,
+          8.660556943084264e-05
+        ],
+        "eta": [
+          2678822.83418417,
+          1531.6124875300588
+        ],
+        "spectral_gaps": [
+          0.006216992925611842,
+          0.0005609022351326098
+        ],
+        "rigid_traction_relative": [
+          2.138593009343554e-15,
+          1.6737212415046623e-15
+        ],
+        "free_residual": 7.458420243404007e-12,
+        "h": 1.1000607630577073,
+        "min_vm": 0.4203201388277402,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.00674214467768637
+      },
+      "minus": {
+        "a": 0.198,
+        "response": [
+          38.74112667313646,
+          8.667950167364867e-05
+        ],
+        "eta": [
+          2654187.396731892,
+          1511.0070602328387
+        ],
+        "spectral_gaps": [
+          0.00588732849086282,
+          0.0014310782223289076
+        ],
+        "rigid_traction_relative": [
+          2.1087877180649937e-15,
+          1.6331815386778504e-15
+        ],
+        "free_residual": 1.2889161222639926e-11,
+        "h": 1.0964129011732897,
+        "min_vm": 0.4327821439150232,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.006749719171534175
+      },
+      "centered_fd": [
+        -3.243243539937879,
+        -1.848306070150832e-05
+      ],
+      "absolute_error": [
+        2.812578673516697e-06,
+        9.253981780220572e-12
+      ],
+      "relative_error": [
+        8.672124303911374e-07,
+        5.006734164024427e-07
+      ],
+      "forward_Taylor_remainder": [
+        4.2102756598556834e-05,
+        1.4254116891583903e-10
+      ],
+      "eta_centered_fd": [
+        6158859.363069409,
+        5151.356824305026
+      ],
+      "chain_length_centered_fd": 0.9119654711043923
+    },
+    {
+      "h": 0.001,
+      "plus": {
+        "a": 0.201,
+        "response": [
+          38.73142851736518,
+          8.662415940376783e-05
+        ],
+        "eta": [
+          2672647.298774452,
+          1526.4767534347307
+        ],
+        "spectral_gaps": [
+          0.0061341738841004245,
+          0.0007743870832477295
+        ],
+        "rigid_traction_relative": [
+          1.992148750953976e-15,
+          1.7143851648564602e-15
+        ],
+        "free_residual": 1.462950948637726e-11,
+        "h": 1.099143742585891,
+        "min_vm": 0.4234003891954089,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.00674407308999592
+      },
+      "minus": {
+        "a": 0.199,
+        "response": [
+          38.73791500038861,
+          8.666112554002113e-05
+        ],
+        "eta": [
+          2660329.370089807,
+          1516.1739095581402
+        ],
+        "spectral_gaps": [
+          0.005969334909669111,
+          0.0012094231235592057
+        ],
+        "rigid_traction_relative": [
+          1.7147780319241783e-15,
+          1.1249709784897751e-15
+        ],
+        "free_residual": 2.2686550225515973e-11,
+        "h": 1.0973197991224957,
+        "min_vm": 0.42963213398895217,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.006747860695903294
+      },
+      "centered_fd": [
+        -3.243241511714956,
+        -1.8483068126649957e-05
+      ],
+      "absolute_error": [
+        7.843557505715637e-07,
+        1.82884014261254e-12
+      ],
+      "relative_error": [
+        2.4184321069815314e-07,
+        9.894677383230442e-08
+      ],
+      "forward_Taylor_remainder": [
+        1.0525095488548436e-05,
+        3.563819921158266e-11
+      ],
+      "eta_centered_fd": [
+        6158964.342322433,
+        5151.421938295243
+      ],
+      "chain_length_centered_fd": 0.9119717316976583
+    },
+    {
+      "h": 0.0005,
+      "plus": {
+        "a": 0.2005,
+        "response": [
+          38.733058031570316,
+          8.66334276666131e-05
+        ],
+        "eta": [
+          2669563.634577329,
+          1523.9049404317577
+        ],
+        "spectral_gaps": [
+          0.006092862990745407,
+          0.0008821281965285532
+        ],
+        "rigid_traction_relative": [
+          2.343030377831049e-15,
+          1.5752173564759823e-15
+        ],
+        "free_residual": 1.1922591962965837e-11,
+        "h": 1.098686492190511,
+        "min_vm": 0.4249495604715356,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.006745028711057282
+      },
+      "minus": {
+        "a": 0.1995,
+        "response": [
+          38.73630127271234,
+          8.6651910737063e-05
+        ],
+        "eta": [
+          2663404.6439897153,
+          1518.7535022161524
+        ],
+        "spectral_gaps": [
+          0.006010442658861859,
+          0.0010996397232067023
+        ],
+        "rigid_traction_relative": [
+          2.0613963833505906e-15,
+          1.6125884699560872e-15
+        ],
+        "free_residual": 6.059542286119609e-12,
+        "h": 1.097774518893656,
+        "min_vm": 0.42806552564177414,
+        "sample_count": 1600,
+        "free_dofs": 162,
+        "skew_fraction": 0.0067469225588868515
+      },
+      "centered_fd": [
+        -3.2432411420231233,
+        -1.8483070449905477e-05
+      ],
+      "absolute_error": [
+        4.146639178692624e-07,
+        4.944153776437112e-13
+      ],
+      "relative_error": [
+        1.2785480719061538e-07,
+        2.6749635143638736e-08
+      ],
+      "forward_Taylor_remainder": [
+        2.6312540333545825e-06,
+        8.910331690253569e-12
+      ],
+      "eta_centered_fd": [
+        6158990.587613545,
+        5151.438215605367
+      ],
+      "chain_length_centered_fd": 0.9119732968549954
+    }
+  ],
+  "omissions": {
+    "direct_endpoint_force": {
+      "omitted_derivative_matrix_frobenius_norm": 1137.057653991174,
+      "change_from_full_derivative": [
+        -0.002015819009303769,
+        -3.353512713098494e-10
+      ],
+      "omitted_derivative": [
+        -3.245256546368509,
+        -1.848340530676141e-05
+      ],
+      "omission_difference_to_finest_fd_error": [
+        4861.332087108018,
+        678.278400053148
+      ]
+    },
+    "explicit_endpoint_length_in_jump_penalty": {
+      "omitted_derivative_matrix_frobenius_norm": 3765338.496327971,
+      "change_from_full_derivative": [
+        0.015607434448315827,
+        3.304381697190538e-08
+      ],
+      "omitted_derivative": [
+        -3.2276332929108897,
+        -1.8450026138518194e-05
+      ],
+      "omission_difference_to_finest_fd_error": [
+        37638.75701680084,
+        66834.12059185105
+      ]
+    },
+    "calibration_penalty_total_derivative": {
+      "omitted_derivative_matrix_frobenius_norm": 11100847.80316891,
+      "change_from_full_derivative": [
+        0.044652696465215844,
+        6.640789760099158e-07
+      ],
+      "omitted_derivative": [
+        -3.1985880308939896,
+        -1.7818990979480185e-05
+      ],
+      "omission_difference_to_finest_fd_error": [
+        107684.0654346352,
+        1343160.0351404697
+      ]
+    },
+    "all_three": {
+      "omitted_derivative_matrix_frobenius_norm": 14833520.908621013,
+      "change_from_full_derivative": [
+        0.05824431208485142,
+        6.967874426584003e-07
+      ],
+      "omitted_derivative": [
+        -3.184996415274354,
+        -1.77862825128317e-05
+      ],
+      "omission_difference_to_finest_fd_error": [
+        140461.49079991816,
+        1409315.8792494591
+      ]
+    }
+  }
+}

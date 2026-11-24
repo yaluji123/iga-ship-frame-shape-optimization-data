@@ -1,0 +1,15 @@
+# Moving material edge and receiving trace under skew coupling
+
+Run python check_gradient.py with NumPy and SciPy in this directory. The checker re-solves the state and two transpose adjoints, repeats four pairs of real perturbed state solutions, and verifies the archived results. Python and NumPy 1.26.4 with SciPy 1.13.1 were used. The study is an independent implementation of the displayed equations. It uses no private CAD files or production solver.
+
+## Geometry and loading
+
+Two independent shells are represented by separate coplanar cubic B-spline carriers of length 1 mm and width 2 mm, with the overlapping parts tied only through the common curve. Their longitudinal grids have 3 and 5 spans. Each has one transverse span. The active shell occupies the material below y=4a x(1-x), and the receiving shell is uncut. Here a is the middle trim height in mm and x is the longitudinal coordinate divided by 1 mm. The receiving trace moves over the uncut shell with the active edge. The endpoints stay at their original positions as their tangents and the chain length change. The base height is 0.2 mm. The two carriers and their physical directors are fixed.
+
+The thickness is 0.1 mm, Young's modulus is 210000 MPa, and Poisson's ratio is 0.3. Six displacement values at three outer corners fix the rigid motion. Both external edge loads are printed in the result record and built from a fixed global traction on the respective exterior edges. They are independent of a. A ten-point Gauss rule is used in each longitudinal knot span and each retained transverse interval. There are 1600 face-stress samples per state. At each shape the response is the unweighted KS of the two face stresses, with a sharpness of 0.5 per MPa, and the compliance.
+
+## Calculations
+
+The primal uses the skew sign, the one-sided flux and trace-to-energy penalty, and the full open-chain endpoint weight. Each pair of real trial solves assembles and factors the perturbed model with fully recomputed spectral calibration. Each gradient calculation reuses the base state factorization in transpose mode. Complex-step directions act on analytic basis functions, the moved material quadrature, common curve traces, whole-chain end measure, and stress recovery. The penalty derivative is calculated separately at the real dominant energy-normalized spectral witness. All evaluated calibration gaps exceed the prescribed lead-gap floor. The final reference compares four centered differences and four one-sided Taylor residuals.
+
+The three paired omissions remove, respectively, the end force direction in skew work, the explicit h derivative in the endpoint jump penalty, and the total spectral penalty derivative. For all omissions the base forward operator, state, adjoints, and stress samples remain fixed. The direct removal of h from the jump term keeps the indirect h contribution in the spectral derivative. In the skew endpoint consistency term the end weight and flux normalization cancel algebraically. These paired tests examine the need for those derivative terms at the measured design and do not imply the same sensitivity for all joints.

@@ -1,0 +1,442 @@
+{
+  "candidate_section": "5.3.8",
+  "straight_beta": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "candidate_beta": [
+    3.1164455700249425,
+    -0.5253978169516366,
+    -4.3763255003709265
+  ],
+  "source_frozen_case_sha256": "8b5afe0a780cc75f792a8eb12fb4008c57eac635f1121e876f4ee025c8e1e143",
+  "target_reduction_percent": 0.04,
+  "compliance_limit_percent": 5.0,
+  "refinement_radii_mm": [
+    175.0,
+    110.0,
+    80.0,
+    62.0,
+    48.0
+  ],
+  "pressure_MPa": 0.06,
+  "shell_types": [
+    "S4R",
+    "S3"
+  ],
+  "windows": "B4A XY intersections on common material. Corner [0,32] mm square; offset [16,48] mm square, referenced to the same support corner. Sample the larger of the two face von Mises stresses per element.",
+  "source_script_sha256": {
+    "geometry.py": "923f0ddfd36135f81a6775c79945add3b83a83d62179352b457b3929d436abc0",
+    "mesh.py": "31270de8d4083f87eec2f37fa0e0f653ab5268d4590d8cd64b6cb672649be3bf",
+    "connections.py": "4d85155b7e730d4f4eaa99d6014b55b4ff46155563310df662525afd36a7cb6a",
+    "read_odb.py": "e2b94df584fb41e8258a5dc812ba72aacfd9668de1720111595b9c5f82edc0bb",
+    "run_case.py": "8eef86c44a69721fbf893ad1816dcbb87b8b8ef981886653be25d33eb1682a0a",
+    "summarize_pairs.py": "34f07861d298768e607e26271dfa1e62af5fb474704e1a052c5df74fb35d110b"
+  },
+  "pairs": {
+    "face_L4": {
+      "restraint": "six_faces",
+      "solve_state": "previously solved and hash-checked; common windows re-evaluated",
+      "states": [
+        {
+          "shape": "straight",
+          "structural_elements": 23485,
+          "fixed_nodes": 3678,
+          "geometric_element_size_mm": 2.141772518699412,
+          "compliance_Nmm": 3095.6669671116974,
+          "peak": {
+            "element": 2,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 95.36261749267578,
+            "base_material_offset_from_corner_mm": [
+              0.745829787812454,
+              1.0708349259532497,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              0.745829787812454,
+              1.0708349259532497,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 1.3049710764019191
+          },
+          "volume_mm3": 225106259.33366275,
+          "area_tail_1_percent_MPa": 8.347453936578402,
+          "max_force_residual_ratio": 3.6523993390475825e-09,
+          "max_moment_residual_ratio": 3.129668329016765e-09,
+          "artificial_internal_energy_ratio": 0.0009221276701662211,
+          "input_sha256": "51f228e04a412927c80f663b2b022fd2b0fd66cf51cf89cac1cb3477477a6794",
+          "mesh_sha256": "c33a1c7d8cdc9cdb9bf8c705571859924a93d3000305e90224a9110fa0487d85",
+          "odb_field_sha256": "4b81c58641484cc7192e85a0d9424fb2fe0dc1fd16834fd4f2b205325a50f0f0"
+        },
+        {
+          "shape": "candidate",
+          "structural_elements": 23485,
+          "fixed_nodes": 3678,
+          "geometric_element_size_mm": 2.1167317173057727,
+          "compliance_Nmm": 3236.656700938544,
+          "peak": {
+            "element": 2,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 63.09236145019531,
+            "base_material_offset_from_corner_mm": [
+              0.745829787812454,
+              1.0708349259532497,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              0.745829787812454,
+              1.4121331722121795,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 1.5969915991241606
+          },
+          "volume_mm3": 225015872.6617834,
+          "area_tail_1_percent_MPa": 8.854376229212225,
+          "max_force_residual_ratio": 3.2956156914178557e-09,
+          "max_moment_residual_ratio": 4.524455143631873e-09,
+          "artificial_internal_energy_ratio": 0.0009163594388066058,
+          "input_sha256": "964e56f5b055af4ff53035cd50b5cb69005c99f320e8057d0494a04685f37d94",
+          "mesh_sha256": "7654b8786e49d554fb7c027c3a2bde1ebf45baa551c29a21bdcad4aab8923d0e",
+          "odb_field_sha256": "e7ee5dbc9a822df552d8834ab9a41c6c1717e1cbf8362213838ff99e1f14f147"
+        }
+      ],
+      "compliance_increase_percent": 4.554421884676829,
+      "compliance_margin_percentage_points": 0.4455781153231708,
+      "shell_mesh_volume_change_percent": -0.040152891415323744,
+      "area_tail_1_percent_change_percent": 6.0727773580456335,
+      "whole_sampled_peak_change_percent": -33.83952421918258,
+      "common_physical_windows": {
+        "corner_0_4t": {
+          "projected_overlap_mm2": 919.2533295679353,
+          "base_MPa": 29.827725088454095,
+          "changed_MPa": 31.899023292173673,
+          "percent": 6.944204419134037
+        },
+        "primary_2t_6t": {
+          "projected_overlap_mm2": 1024.0000000000005,
+          "base_MPa": 21.462864797877554,
+          "changed_MPa": 21.272811911387155,
+          "percent": -0.8854963597832111
+        }
+      },
+      "resultant_force_N": [
+        0.0,
+        -17999.99999999996,
+        0.0
+      ],
+      "element_connectivity_and_fixed_nodes_equal": true
+    },
+    "face_L2": {
+      "restraint": "six_faces",
+      "solve_state": "fresh Abaqus 2024 solves",
+      "states": [
+        {
+          "shape": "straight",
+          "structural_elements": 17707,
+          "fixed_nodes": 2175,
+          "geometric_element_size_mm": 8.567151522115203,
+          "compliance_Nmm": 3095.2986977819487,
+          "peak": {
+            "element": 1,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 58.34172821044922,
+            "base_material_offset_from_corner_mm": [
+              2.9859336550000535,
+              4.283341830250038,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              2.9859336550000535,
+              4.283341830250038,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 5.221380758352386
+          },
+          "volume_mm3": 225106259.33366287,
+          "area_tail_1_percent_MPa": 8.346913339286138,
+          "max_force_residual_ratio": 3.1060799893656106e-09,
+          "max_moment_residual_ratio": 6.543751191955353e-09,
+          "artificial_internal_energy_ratio": 0.0009969054611474071,
+          "input_sha256": "e0a07e9c8855e99a46d50dd04224a8b5368175e5616e093f45757a8c4358a2e2",
+          "mesh_sha256": "fc949568f311be2c29ffe31c80b2eb035399a024b98d7c4135903b457b8b664c",
+          "odb_field_sha256": "d8d7091e33e95f905e43a075e9e70bc9031c17bbd005468abc016af0ff1d9760"
+        },
+        {
+          "shape": "candidate",
+          "structural_elements": 17707,
+          "fixed_nodes": 2175,
+          "geometric_element_size_mm": 8.472604992857136,
+          "compliance_Nmm": 3236.2740205772675,
+          "peak": {
+            "element": 1,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 50.820003509521484,
+            "base_material_offset_from_corner_mm": [
+              2.9859336550000535,
+              4.283341830250038,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              2.9859336550000535,
+              5.450007737180158,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 6.214369165431816
+          },
+          "volume_mm3": 225015887.50434202,
+          "area_tail_1_percent_MPa": 8.85334238845915,
+          "max_force_residual_ratio": 1.4617369273223444e-08,
+          "max_moment_residual_ratio": 6.240882987295101e-09,
+          "artificial_internal_energy_ratio": 0.0009714687601700934,
+          "input_sha256": "d15a0cb4f22db18592932f0580cfcee4e820b707a6d918af2805bb9f97d39206",
+          "mesh_sha256": "fce06be8597cb9b5c868d819f57b4e3674e3fe647752ec19faa1bf10c8ffd83f",
+          "odb_field_sha256": "e40a846bf47a4fdb689aa48ffd3293a69fbb84465a285b9ba633eef1cdb9a350"
+        }
+      ],
+      "compliance_increase_percent": 4.554498178038191,
+      "compliance_margin_percentage_points": 0.445501821961809,
+      "shell_mesh_volume_change_percent": -0.04014629783656298,
+      "area_tail_1_percent_change_percent": 6.067261376602784,
+      "whole_sampled_peak_change_percent": -12.892529809531016,
+      "common_physical_windows": {
+        "corner_0_4t": {
+          "projected_overlap_mm2": 921.0236872478172,
+          "base_MPa": 30.167275723529123,
+          "changed_MPa": 31.871491355969372,
+          "percent": 5.649219531981253
+        },
+        "primary_2t_6t": {
+          "projected_overlap_mm2": 1024.0000000000007,
+          "base_MPa": 21.577448764844004,
+          "changed_MPa": 21.44028825955429,
+          "percent": -0.6356659991851754
+        }
+      },
+      "resultant_force_N": [
+        0.0,
+        -17999.99999999996,
+        0.0
+      ],
+      "element_connectivity_and_fixed_nodes_equal": true
+    },
+    "line_L4": {
+      "restraint": "eight_backing_lines",
+      "solve_state": "fresh Abaqus 2024 solves",
+      "states": [
+        {
+          "shape": "straight",
+          "structural_elements": 23485,
+          "fixed_nodes": 250,
+          "geometric_element_size_mm": 2.141772518699412,
+          "compliance_Nmm": 3132.66571360718,
+          "peak": {
+            "element": 2,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 114.05099487304688,
+            "base_material_offset_from_corner_mm": [
+              0.745829787812454,
+              1.0708349259532497,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              0.745829787812454,
+              1.0708349259532497,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 1.3049710764019757
+          },
+          "volume_mm3": 225106259.33366275,
+          "area_tail_1_percent_MPa": 8.325414482334295,
+          "max_force_residual_ratio": 5.849702359340552e-09,
+          "max_moment_residual_ratio": 5.288761878463088e-09,
+          "artificial_internal_energy_ratio": 0.0009769740880115644,
+          "input_sha256": "0172851e0dd4647ddb64c94b22914dd8dbe984b45abbd5f3c0b9c5a76b74c3a4",
+          "mesh_sha256": "427f0a718c4524a8aebeed1c935058ea904ff9aedda0e6ef0079496b4302d877",
+          "odb_field_sha256": "8fbfe87c9b66f1f36bfb29abcf7a0a8693421c8ddad39593f55e870542b2c2bc"
+        },
+        {
+          "shape": "candidate",
+          "structural_elements": 23485,
+          "fixed_nodes": 250,
+          "geometric_element_size_mm": 2.116731717305545,
+          "compliance_Nmm": 3275.088254026102,
+          "peak": {
+            "element": 2,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 80.65675354003906,
+            "base_material_offset_from_corner_mm": [
+              0.745829787812454,
+              1.0708349259532497,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              0.745829787812454,
+              1.4121331722119521,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 1.5969915991240544
+          },
+          "volume_mm3": 225015872.661819,
+          "area_tail_1_percent_MPa": 8.825567229528591,
+          "max_force_residual_ratio": 5.5738996154254835e-09,
+          "max_moment_residual_ratio": 8.229935062772779e-09,
+          "artificial_internal_energy_ratio": 0.0009661199744585461,
+          "input_sha256": "8c9289e2ddb6efa76f3b7407c166c0b9014cb162ef8b06282cfda8e5b9a376a0",
+          "mesh_sha256": "0c8c9c7bc7cf69d5b5d29c48f91a4c6d300cbf70a5e14dda60c8e9a4d26d38c8",
+          "odb_field_sha256": "12d2772a165d792863661cfebfb7a53b7c349e33d15eb536387fd544969fec9d"
+        }
+      ],
+      "compliance_increase_percent": 4.546368921531885,
+      "compliance_margin_percentage_points": 0.45363107846811523,
+      "shell_mesh_volume_change_percent": -0.040152891399503066,
+      "area_tail_1_percent_change_percent": 6.007541705648056,
+      "whole_sampled_peak_change_percent": -29.280096478053352,
+      "common_physical_windows": {
+        "corner_0_4t": {
+          "projected_overlap_mm2": 919.2533295679337,
+          "base_MPa": 30.775466497799833,
+          "changed_MPa": 32.95037951639717,
+          "percent": 7.067035096780172
+        },
+        "primary_2t_6t": {
+          "projected_overlap_mm2": 1024.0000000000011,
+          "base_MPa": 21.615453973966975,
+          "changed_MPa": 21.456889368004965,
+          "percent": -0.7335705562926398
+        }
+      },
+      "resultant_force_N": [
+        0.0,
+        -17999.99999999996,
+        0.0
+      ],
+      "element_connectivity_and_fixed_nodes_equal": true
+    },
+    "face_L5": {
+      "restraint": "six_faces",
+      "solve_state": "fresh Abaqus 2024 solves",
+      "states": [
+        {
+          "shape": "straight",
+          "structural_elements": 31920,
+          "fixed_nodes": 6144,
+          "geometric_element_size_mm": 1.070877844448811,
+          "compliance_Nmm": 3095.7048322323476,
+          "peak": {
+            "element": 3,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 120.82504272460938,
+            "base_material_offset_from_corner_mm": [
+              0.37285737570300626,
+              0.5354173307384826,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              0.37285737570300626,
+              0.5354173307384826,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 0.6524525578762583
+          },
+          "volume_mm3": 225106259.3336624,
+          "area_tail_1_percent_MPa": 8.347515665285954,
+          "max_force_residual_ratio": 2.998186709260113e-09,
+          "max_moment_residual_ratio": 5.115712648939335e-09,
+          "artificial_internal_energy_ratio": 0.0009129495003186907,
+          "input_sha256": "3e3285819605c6f18c2bee237e1d2cd26ba8557fa6ef08d09e563bb1f27af275",
+          "mesh_sha256": "fd579dbdea6d96bc37c18d21fe04a57b042fc979e12eca62c9adf1f2e038304d",
+          "odb_field_sha256": "d23ecebb1043e4348824a68c58450dba8b70e568a5ec75eee66e897ff17cc1be"
+        },
+        {
+          "shape": "candidate",
+          "structural_elements": 31920,
+          "fixed_nodes": 6144,
+          "geometric_element_size_mm": 1.0649582452504067,
+          "compliance_Nmm": 3236.6841201757265,
+          "peak": {
+            "element": 3,
+            "face": "SPOS",
+            "ip": 1,
+            "owner": "B4A",
+            "section_point": 5,
+            "value_MPa": 68.7748031616211,
+            "base_material_offset_from_corner_mm": [
+              0.37285737570300626,
+              0.5354173307384826,
+              0.0
+            ],
+            "offset_from_corner_mm": [
+              0.37285737570300626,
+              0.7103187406742109,
+              0.0
+            ],
+            "distance_to_restrained_geometry_mm": 0.8022314725692623
+          },
+          "volume_mm3": 225015871.8979488,
+          "area_tail_1_percent_MPa": 8.854404115002461,
+          "max_force_residual_ratio": 3.716097480496728e-09,
+          "max_moment_residual_ratio": 3.06053705655246e-09,
+          "artificial_internal_energy_ratio": 0.0009096551423168755,
+          "input_sha256": "d56fde10c0e0c4f750f2e8e947a1b4745ca1240a19c224452ab4fe60c04a0db8",
+          "mesh_sha256": "479ec39eb4a07feee1737f9c86579644e9dd474b13a2e5bee0e5212437aaac46",
+          "odb_field_sha256": "ee8831800d155155b99560ea71477c86ddd254ce6e86b9d33fe93990467534f1"
+        }
+      ],
+      "compliance_increase_percent": 4.554028745748262,
+      "compliance_margin_percentage_points": 0.445971254251738,
+      "shell_mesh_volume_change_percent": -0.0401532307369612,
+      "area_tail_1_percent_change_percent": 6.07232702568572,
+      "whole_sampled_peak_change_percent": -43.07901606260869,
+      "common_physical_windows": {
+        "corner_0_4t": {
+          "projected_overlap_mm2": 919.1641315813065,
+          "base_MPa": 29.79455298406234,
+          "changed_MPa": 31.899157820001232,
+          "percent": 7.06372348349944
+        },
+        "primary_2t_6t": {
+          "projected_overlap_mm2": 1023.999999999992,
+          "base_MPa": 21.451767555758817,
+          "changed_MPa": 21.264709164656,
+          "percent": -0.8719952359012018
+        }
+      },
+      "resultant_force_N": [
+        0.0,
+        -17999.99999999996,
+        0.0
+      ],
+      "element_connectivity_and_fixed_nodes_equal": true
+    }
+  },
+  "regenerated_L4_coordinate_agreement_mm": {
+    "straight": 0.0,
+    "curved": 7.597594731123536e-08
+  },
+  "peak_position_convention": "The offset vectors refer to the same fixed support corner of the B4A web. For an S4R or S3 element the reported position represents the single in-plane integration point. Element labels are sequential public identifiers, retained consistently in all paired records.",
+  "support_distance_convention": "Three-dimensional Euclidean distance from the midsurface integration point to the union of the six closed CAD support faces or eight closed attachment line segments, according to the restraint in that row. The named shell face supplies the stress value.",
+  "IGA_represented_CAD_volume_reduction_percent": 0.04000000999999642
+}

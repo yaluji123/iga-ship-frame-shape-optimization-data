@@ -1,0 +1,20 @@
+{
+  "warm_counts": {
+    "analytic": 8,
+    "central": 56
+  },
+  "first_mode": {
+    "ks_increment": -0.0015827446928540212,
+    "peak_increment": 0.0021061224847258586
+  },
+  "reference_curve": {
+    "compliance_rise_percent": 4.275061506495814,
+    "ks_change_MPa": -1.6125001545138815
+  },
+  "cold_counts": {
+    "Mass contour and correction": 6,
+    "Direct SLSQP": 11
+  },
+  "shared_curve_bound_mm": 4.73308022864167e-11,
+  "anchor_bound_mm": 2.1286391364332163e-10
+}

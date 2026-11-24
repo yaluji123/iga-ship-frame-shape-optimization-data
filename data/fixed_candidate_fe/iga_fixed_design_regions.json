@@ -1,0 +1,118 @@
+{
+  "method": "Physical fixed-geometry pair previously checked in four independent finite-element analyses, with freshly corrected IGA equilibria. Six-face Euclidean support distance, matched physical common material windows, both face stress envelopes.",
+  "material_points_per_state": 72874,
+  "states": {
+    "baseline": {
+      "compliance_Nmm": 3059.5258596648478,
+      "KS_MPa": 56.16647421152403,
+      "volume_mm3": 225097841.25834712,
+      "maximum_von_mises_MPa": 53.83210642620619,
+      "near_support_distance_mm": 1.923302995712671,
+      "peak_offset_from_corner_mm": [
+        0.8283153360816868,
+        1.7357961050161066,
+        7.275957614183426e-12
+      ],
+      "peak_element_ordinal": 0,
+      "peak_point_ordinal": 5,
+      "points_above": {
+        "0": 68170,
+        "8": 67864,
+        "16": 67551,
+        "32": 66834,
+        "64": 65362
+      },
+      "maximum_von_mises_beyond_support_MPa": {
+        "0": 53.83210642620619,
+        "8": 49.56902760230211,
+        "16": 43.21593156651048,
+        "32": 34.86759360482706,
+        "64": 18.649466275236023
+      },
+      "frame_top_1_percent_area_mean_MPa": 8.252466844510671,
+      "moving_top_1_percent_area_mean_MPa": 15.474568904153386,
+      "area_weighted_KS_MPa": 26.486544561174014,
+      "receiving_strip_peak_MPa": 6.593148276376684
+    },
+    "candidate": {
+      "compliance_Nmm": 3190.322471972665,
+      "KS_MPa": 54.55397405701015,
+      "volume_mm3": 225007802.09933397,
+      "maximum_von_mises_MPa": 50.25456989061307,
+      "near_support_distance_mm": 2.279410796609831,
+      "peak_offset_from_corner_mm": [
+        0.8283153360816868,
+        2.123583594908723,
+        7.275957614183426e-12
+      ],
+      "peak_element_ordinal": 0,
+      "peak_point_ordinal": 5,
+      "points_above": {
+        "0": 68170,
+        "8": 67864,
+        "16": 67554,
+        "32": 66840,
+        "64": 65363
+      },
+      "maximum_von_mises_beyond_support_MPa": {
+        "0": 50.25456989061307,
+        "8": 49.60599071841752,
+        "16": 47.86303926396153,
+        "32": 39.53032871449248,
+        "64": 17.038498710904758
+      },
+      "frame_top_1_percent_area_mean_MPa": 8.740403167013396,
+      "moving_top_1_percent_area_mean_MPa": 15.199012089682226,
+      "area_weighted_KS_MPa": 25.09971112309269,
+      "receiving_strip_peak_MPa": 9.266998476241438
+    }
+  },
+  "common_retained_labels_with_distance_cutoffs": {
+    "0": {
+      "points": 68170,
+      "straight": 53.83210642620619,
+      "candidate": 50.25456989061307,
+      "relative_change_percent": -6.645730165690722
+    },
+    "8": {
+      "points": 67864,
+      "straight": 49.56902760230211,
+      "candidate": 49.60599071841752,
+      "relative_change_percent": 0.07456897563529186
+    },
+    "16": {
+      "points": 67551,
+      "straight": 43.21593156651048,
+      "candidate": 46.38926624044192,
+      "relative_change_percent": 7.342974127602919
+    },
+    "32": {
+      "points": 66834,
+      "straight": 34.86759360482706,
+      "candidate": 37.15703041942966,
+      "relative_change_percent": 6.5660878136587275
+    },
+    "64": {
+      "points": 65358,
+      "straight": 18.377283794930154,
+      "candidate": 17.038498710904758,
+      "relative_change_percent": -7.284999779971479
+    }
+  },
+  "common_physical_windows": {
+    "primary_2t_6t": {
+      "projected_overlap_mm2": 1023.9999999999293,
+      "base_MPa": 22.006609087118427,
+      "changed_MPa": 22.04399584746775,
+      "percent": 0.16988878296206877
+    },
+    "corner_0_4t": {
+      "projected_overlap_mm2": 919.1343434217333,
+      "base_MPa": 31.703271852307285,
+      "changed_MPa": 34.468612857943235,
+      "percent": 8.722572920922978
+    }
+  },
+  "full_peak_change_percent": -6.645730165690722,
+  "compliance_change_percent": 4.275061506495814
+}

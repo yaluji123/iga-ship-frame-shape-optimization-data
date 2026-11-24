@@ -1,27 +1,23 @@
 {
   "title": "Replication data for Isogeometric shape optimization of trimmed ship-frame connections using consistent stress sensitivities",
   "upload_type": "dataset",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "creators": [
     {
       "name": "Ji, Yuheng",
       "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
     },
     {
-      "name": "Fang, Chun",
-      "affiliation": "National Key Laboratory of Ship Structural Safety / China Ship Scientific Research Center"
-    },
-    {
       "name": "Dai, Zhijie",
       "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
     },
     {
-      "name": "Wei, Pengyu",
-      "affiliation": "National Key Laboratory of Ship Structural Safety / China Ship Scientific Research Center"
-    },
-    {
       "name": "Wang, Deyu",
       "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
+    },
+    {
+      "name": "Wang, Yao",
+      "affiliation": "Hudong-Zhonghua Shipbuilding (Group) Co., Ltd., Shanghai, China"
     },
     {
       "name": "Li, Chuntong",

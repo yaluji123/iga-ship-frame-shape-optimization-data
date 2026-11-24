@@ -1,0 +1,541 @@
+{
+  "reference_field": "Untrimmed parabolic cylinder, continuous weak loads of Section 4.1",
+  "displacement": "Equilibrium solution of the material-weighted Galerkin projection at each field, mesh and thickness",
+  "measure": "Physical membrane energies integrated at identical 16x16 recovery points per cell, at the same displacement u_h. Numerator uses the recovered projected strain; denominator uses compatible strain B_m u_h.",
+  "assembly": "8x8 quadrature per cell. Positive controls excluded.",
+  "coefficient_spaces": [
+    "Q(2,3)",
+    "Q(3,2)",
+    "Q(2,2)"
+  ],
+  "fields": {
+    "generator": {
+      "sha256": "02276335AF1C1D027DDB4F14B09D5F4FDF7F38A1931CD8B12764FD45214A9F39",
+      "count": 24,
+      "min_percent": 0.0003913541456059337,
+      "max_percent": 0.07064428593303336,
+      "states": [
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 5.735988806050381,
+          "Em_projected": 0.004052148333233018,
+          "Em_exact": 0.0,
+          "retained_percent": 0.07064428593303336
+        },
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.5699073535304742,
+          "Em_projected": 1.1616597360521949e-05,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0020383308424710097
+        },
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.04503865155679505,
+          "Em_projected": 6.869256096062279e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0015251913320273249
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 5.736048075174838,
+          "Em_projected": 0.00404774636302533,
+          "Em_exact": 0.0,
+          "retained_percent": 0.07056681377102914
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.5704122985007496,
+          "Em_projected": 1.1385975407816036e-05,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0019960957079190804
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.04502116469513887,
+          "Em_projected": 6.86091478581942e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0015239309849663268
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.1358852663076057,
+          "Em_projected": 6.991021781572424e-06,
+          "Em_exact": 0.0,
+          "retained_percent": 0.005144797498315037
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.013639704337401295,
+          "Em_projected": 1.3638216462032375e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0009998909158635617
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.0013842334107240064,
+          "Em_projected": 5.528009396924189e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0003993552932689893
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.13588541442922322,
+          "Em_projected": 6.9647846661354345e-06,
+          "Em_exact": 0.0,
+          "retained_percent": 0.005125483625590358
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.013640017426563558,
+          "Em_projected": 1.3552006045217694e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0009935475609309365
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.0013845212994196656,
+          "Em_projected": 5.4183815020760034e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0003913541456059337
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.002387897571420512,
+          "Em_projected": 1.560946695935281e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.006536908092781825
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.00023840570216977555,
+          "Em_projected": 5.1390229507663105e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0021555788741607637
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 2.3870460382185604e-05,
+          "Em_projected": 2.5851677126429995e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0010829986817398362
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.0023879061886493505,
+          "Em_projected": 1.523976462767653e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.006382061699122468
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.00023841239060315067,
+          "Em_projected": 5.121304917206941e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.002148086726638134
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 2.387092825183085e-05,
+          "Em_projected": 2.5596641462073505e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0010722935108361485
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 3.926184165298311e-05,
+          "Em_projected": 3.403869202321255e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.008669662601175077
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 3.924868548194942e-06,
+          "Em_projected": 2.6234405061980146e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.006684148714750057
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 3.9201045507153456e-07,
+          "Em_projected": 4.492895526104133e-12,
+          "Em_exact": 0.0,
+          "retained_percent": 0.001146116249701622
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 3.926181427110477e-05,
+          "Em_projected": 3.3298205974399308e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.008481066550942743
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 3.9248839327729125e-06,
+          "Em_projected": 2.5957401815019356e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.006613546351848567
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 3.9201178809712027e-07,
+          "Em_projected": 4.461320948847617e-12,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0011380578554801859
+        }
+      ]
+    },
+    "bending_twist": {
+      "sha256": "CB708D251EF5BF622622945377205234BEE82C638436964C3A54D730EFD1B665",
+      "count": 24,
+      "min_percent": 0.00035107742327605373,
+      "max_percent": 0.06543126233841147,
+      "states": [
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 14.696408463698193,
+          "Em_projected": 0.009616045576206872,
+          "Em_exact": 0.0,
+          "retained_percent": 0.06543126233841147
+        },
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 1.4729219749326603,
+          "Em_projected": 2.7692372542343554e-05,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0018800977250413827
+        },
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.12063273147172743,
+          "Em_projected": 1.5520556107657551e-06,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0012865957620544378
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 14.696530478938378,
+          "Em_projected": 0.009605308400108056,
+          "Em_exact": 0.0,
+          "retained_percent": 0.06535765984953686
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 1.474204564448185,
+          "Em_projected": 2.7115837924923678e-05,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0018393538168886019
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.12059349628508079,
+          "Em_projected": 1.55033718028061e-06,
+          "Em_exact": 0.0,
+          "retained_percent": 0.001285589379227916
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.34429577242958936,
+          "Em_projected": 1.6266532508764172e-05,
+          "Em_exact": 0.0,
+          "retained_percent": 0.004724580959555865
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.03454634519897206,
+          "Em_projected": 3.1753518624272775e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0009191571045037093
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.003500451738229772,
+          "Em_projected": 1.2552112636398706e-08,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0003585855076735464
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.3442961536859183,
+          "Em_projected": 1.620284018943223e-05,
+          "Em_exact": 0.0,
+          "retained_percent": 0.004706076444935587
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.034547216593011014,
+          "Em_projected": 3.152220054306397e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0009124382121551579
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 0.0035010843527782816,
+          "Em_projected": 1.2291516732455095e-08,
+          "Em_exact": 0.0,
+          "retained_percent": 0.00035107742327605373
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.0060664716711167545,
+          "Em_projected": 3.552287046248946e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.005855606419728023
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.0006057814097206052,
+          "Em_projected": 1.1738679692410834e-08,
+          "Em_exact": 0.0,
+          "retained_percent": 0.001937774831655015
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 6.064672476238921e-05,
+          "Em_projected": 5.918720695531515e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0009759341034030712
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 0.006066485173795128,
+          "Em_projected": 3.4640412468979087e-07,
+          "Em_exact": 0.0,
+          "retained_percent": 0.005710128925825498
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 0.0006057976199492939,
+          "Em_projected": 1.1685671481964249e-08,
+          "Em_exact": 0.0,
+          "retained_percent": 0.001928972828077858
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 6.064813692768636e-05,
+          "Em_projected": 5.852751310373059e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0009650339823878796
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 9.991972874649246e-05,
+          "Em_projected": 7.809124110946598e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.007815397628589665
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 1.0,
+          "Em_compatible": 9.988957861043773e-06,
+          "Em_projected": 6.020732685989109e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.006027388211806898
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 0.1,
+          "Em_compatible": 9.977910048091301e-07,
+          "Em_projected": 1.0359607083148151e-11,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0010382542068646796
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 9.99196455092669e-05,
+          "Em_projected": 7.633239678501078e-09,
+          "Em_exact": 0.0,
+          "retained_percent": 0.007639378261998681
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 1.0,
+          "Em_compatible": 9.988991680757131e-06,
+          "Em_projected": 5.950126267148053e-10,
+          "Em_exact": 0.0,
+          "retained_percent": 0.005956683574589837
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 0.1,
+          "Em_compatible": 9.97794294044128e-07,
+          "Em_projected": 1.0279965566341763e-11,
+          "Em_exact": 0.0,
+          "retained_percent": 0.0010302690271635413
+        }
+      ]
+    },
+    "membrane_shear": {
+      "sha256": "7B9DB6B62195281C6E88EA0E03CFE1CBED4DDDD97C7499AC17029CBCAE7D3A9C",
+      "count": 8,
+      "min_percent": 99.99644646523798,
+      "max_percent": 99.9999999942992,
+      "states": [
+        {
+          "Ns": 2,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.601856976986,
+          "Em_projected": 2112.5282798224857,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99651722570171
+        },
+        {
+          "Ns": 2,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.6036150456566,
+          "Em_projected": 2112.5285429418122,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99644646523798
+        },
+        {
+          "Ns": 4,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.6424848834104,
+          "Em_projected": 2112.6420652912125,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99998013898703
+        },
+        {
+          "Ns": 4,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.642484963478,
+          "Em_projected": 2112.642065299817,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99998013560439
+        },
+        {
+          "Ns": 8,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.6452235554652,
+          "Em_projected": 2112.6452163799563,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99999966035429
+        },
+        {
+          "Ns": 8,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.6452235724973,
+          "Em_projected": 2112.645216383849,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99999965973235
+        },
+        {
+          "Ns": 16,
+          "Ny": 2,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.6452721867263,
+          "Em_projected": 2112.6452720662887,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.9999999942992
+        },
+        {
+          "Ns": 16,
+          "Ny": 4,
+          "thickness_mm": 10.0,
+          "Em_compatible": 2112.6452721868104,
+          "Em_projected": 2112.6452720663374,
+          "Em_exact": 2112.6452729960365,
+          "retained_percent": 99.99999999429753
+        }
+      ]
+    }
+  }
+}

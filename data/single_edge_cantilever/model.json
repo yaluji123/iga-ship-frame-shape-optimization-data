@@ -1,0 +1,204 @@
+{
+  "scope": "Reconstruction of published 2D cantilever geometry, inputs and reference results for shape-optimization comparison.",
+  "citations": {
+    "lian": {
+      "title": "Implementation of regularized isogeometric boundary element methods for gradient-based shape optimization in two-dimensional linear elasticity",
+      "authors": [
+        "Haojie Lian",
+        "Pierre Kerfriden",
+        "Stephane P. A. Bordas"
+      ],
+      "year": 2016,
+      "doi": "10.1002/nme.5149",
+      "publisher_url": "https://onlinelibrary.wiley.com/doi/10.1002/nme.5149",
+      "public_full_text_url": "https://orbilu.uni.lu/bitstream/10993/18266/1/IGABEMopt2Dpaper.pdf",
+      "locator": "Author postprint Section 6.2.1, Table II, Figures 36–42. Vector coordinates for Figures 37 and 40 read from pages 42–43 of the author postprint."
+    },
+    "sun": {
+      "title": "Structural shape optimization by IGABEM and particle swarm optimization algorithm",
+      "authors": [
+        "S. H. Sun",
+        "T. T. Yu",
+        "T. T. Nguyen",
+        "E. Atroshchenko",
+        "T. Q. Bui"
+      ],
+      "year": 2018,
+      "doi": "10.1016/j.enganabound.2017.12.007",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S0955799717303053",
+      "full_text_lookup_url": "https://www.academia.edu/98668359/Structural_shape_optimization_by_IGABEM_and_particle_swarm_optimization_algorithm",
+      "locator": "Section 5.1, Equation (21), Tables 1–2, Figures 3–8. The Table 2 MMA values reproduce Lian et al.'s Table II."
+    }
+  },
+  "units": "Use the model and material values in consistent units. Sun et al. report generic units.",
+  "geometry": {
+    "initial_length": 30.0,
+    "initial_height": 6.0,
+    "initial_area": 180.0,
+    "bottom": "y=0, fixed design geometry",
+    "upper_edge": {
+      "degree": 2,
+      "unit_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "control_order": "x increasing from clamp to free tip. The published result tables number control ordinates in the reverse order.",
+      "x_controls": [
+        0.0,
+        3.75,
+        7.5,
+        11.25,
+        15.0,
+        18.75,
+        22.5,
+        26.25,
+        30.0
+      ],
+      "initial_y_controls": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0
+      ],
+      "x_control_source": "Exact values from Sun Table 1; same spacing as Lian Figures 37 and 39.",
+      "open_quadratic_knot_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.14285714285714285,
+        0.2857142857142857,
+        0.42857142857142855,
+        0.5714285714285714,
+        0.7142857142857143,
+        0.8571428571428571,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "knot_vector_source": "Normalized uniform interior knots reconstructed from Lian Fig. 37 vector element markers, checked against the areas obtained from the two published final control polygons.",
+      "physical_breaks": [
+        0.0,
+        5.625,
+        9.375,
+        13.125,
+        16.875,
+        20.625,
+        24.375,
+        30.0
+      ],
+      "fig_37_vector_break_readout": [
+        0.0,
+        5.6254473,
+        9.3745968,
+        13.1255136,
+        16.8745747,
+        20.6255752,
+        24.374641,
+        30.0
+      ],
+      "max_absolute_break_readout_error": 0.0005752436971420138
+    }
+  },
+  "material": {
+    "E": 210000.0,
+    "nu": 0.3,
+    "constitutive_inference": "Lian equations (26)–(27) and (97) and Sun equations (8a)–(8b) and (14c) use the plane-strain form. Plane strain is inferred from those equations. A plane-stress membrane solver can match the in-plane plane-strain constitutive tensor using the listed effective material properties.",
+    "equivalent_plane_stress_E": 230769.23076923075,
+    "equivalent_plane_stress_nu": 0.4285714285714286
+  },
+  "support": {
+    "edge": "left",
+    "x": 0.0,
+    "ux": 0.0,
+    "uy": 0.0
+  },
+  "load": {
+    "edge": "fixed bottom edge",
+    "y": 0.0,
+    "x_range": [
+      24.375,
+      30.0
+    ],
+    "traction_components": [
+      0.0,
+      -2.0
+    ],
+    "provenance": "Lian Figure 37 annotates the final bottom element. Sun Figure 3 and Section 5.1 give the rounded loaded length 5.6. The reconstructed quadratic spline gives an element length of 5.625."
+  },
+  "optimization": {
+    "objective": "Minimize the magnitude of the vertical displacement at the free end under distributed traction on the bottom edge.",
+    "objective_reconstruction_note": "The publications identify the beam end as the measurement location. Its exact coordinates remain unspecified. A matched check can report the lower-tip value and the maximum vertical displacement over the right edge. The distributed-load compliance measures the work on the loaded bottom-edge interval.",
+    "design_variables": "Nine vertical upper-edge control ordinates; fixed x control coordinates.",
+    "lower_bound_per_ordinate": 1.5,
+    "upper_bound_per_ordinate": 10.0,
+    "area_upper_bound": 220.0
+  },
+  "published_reference": {
+    "lian_mma": {
+      "ordinate_source": "Table II, in ascending x order.",
+      "terminal_y_controls": [
+        10.0,
+        9.9999,
+        9.9619,
+        9.1364,
+        8.2222,
+        6.9434,
+        5.5876,
+        3.0951,
+        1.5001
+      ],
+      "reconstructed_area": 219.99717187500002,
+      "normalized_objective_fig_40": 0.31132405196442614,
+      "normalized_objectives_by_iteration_fig_40": [
+        0.9999998717199243,
+        0.5580674423335246,
+        0.41472985132339224,
+        0.34757997804578145,
+        0.3199660882456967,
+        0.31192004119623007,
+        0.31132405196442614,
+        0.31132405196442614,
+        0.31132405196442614,
+        0.31132405196442614,
+        0.31132405196442614,
+        0.31132405196442614,
+        0.31132405196442614
+      ],
+      "objective_source": "Vector marker centres scaled to vertical axis [0.3, 1.0], readout only. Paper describes the normalized objective as around 30 percent.",
+      "stress_reference": "Upper-edge von Mises curves before/after optimization in Figures 41–42."
+    },
+    "sun_pso": {
+      "ordinate_source": "Table 2, in ascending x order.",
+      "terminal_y_controls": [
+        10.0,
+        9.8001,
+        9.4473,
+        9.1151,
+        8.2886,
+        6.9153,
+        5.9346,
+        3.2247,
+        1.5
+      ],
+      "reconstructed_area": 219.17567187499998,
+      "reported_rounded_final_area": 219.2,
+      "reported_approx_initial_displacement_magnitude": 0.019,
+      "reported_approx_final_displacement_magnitude": 0.0066,
+      "ratio_from_rounded_displacements": 0.3473684210526316,
+      "converged_generation": 22,
+      "objective_source": "Section 5.1 and Figs. 5 and 8. Use the displacement numbers and their ratio; verify any percentage against those numbers. Equation (21) enforces area at most 220, consistent with Lian and Sun's reported final area."
+    }
+  }
+}

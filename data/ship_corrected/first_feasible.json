@@ -1,0 +1,21 @@
+{
+  "scope": "Bulk predictor then full coupled response",
+  "beta": [
+    3.1195734968831266,
+    -0.5164466822067182,
+    -4.38243360046954
+  ],
+  "unbounded_beta": [
+    3.3640243402420946,
+    -0.5682354747783017,
+    -4.845688554056838
+  ],
+  "actual": {
+    "compliance_rise_percent": 4.281896660870843,
+    "mass_saved_percent": 0.040000010000007524,
+    "peak_change_percent": -6.6477622196928765,
+    "ks_change_percent": -2.8746572663083003
+  },
+  "measurements": 2,
+  "predicted_mass_change": -0.0004000001
+}

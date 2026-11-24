@@ -1,0 +1,275 @@
+{
+  "constitutive": "Plane strain, E=210000, Poisson ratio=0.3, unit thickness",
+  "grids": {
+    "7x2": {
+      "initial": {
+        "longitudinal_elements": 7,
+        "transverse_elements": 2,
+        "degrees_of_freedom": 308,
+        "signed_lower_tip_displacement": -0.02148489833418637,
+        "signed_upper_tip_displacement": -0.021457918975595333,
+        "max_abs_right_edge_displacement": 0.02148489833418637,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.20987842806878573,
+        "relative_equilibrium_residual": 5.76841664892811e-12,
+        "lower_tip_ratio_to_initial": 1.0,
+        "max_edge_ratio_to_initial": 1.0
+      },
+      "lian_mma": {
+        "longitudinal_elements": 7,
+        "transverse_elements": 2,
+        "degrees_of_freedom": 308,
+        "signed_lower_tip_displacement": -0.006941060075186703,
+        "signed_upper_tip_displacement": -0.006930570913119116,
+        "max_abs_right_edge_displacement": 0.006941060075186703,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.0637281394268286,
+        "relative_equilibrium_residual": 3.374253683721579e-12,
+        "lower_tip_ratio_to_initial": 0.3230669266953066,
+        "max_edge_ratio_to_initial": 0.3230669266953066
+      },
+      "sun_pso": {
+        "longitudinal_elements": 7,
+        "transverse_elements": 2,
+        "degrees_of_freedom": 308,
+        "signed_lower_tip_displacement": -0.00703235807328619,
+        "signed_upper_tip_displacement": -0.007021774286955576,
+        "max_abs_right_edge_displacement": 0.00703235807328619,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06512024042787648,
+        "relative_equilibrium_residual": 4.633124564962646e-12,
+        "lower_tip_ratio_to_initial": 0.32731633000545474,
+        "max_edge_ratio_to_initial": 0.32731633000545474
+      },
+      "current_method": {
+        "longitudinal_elements": 7,
+        "transverse_elements": 2,
+        "degrees_of_freedom": 308,
+        "signed_lower_tip_displacement": -0.006928589245685022,
+        "signed_upper_tip_displacement": -0.006918190017904053,
+        "max_abs_right_edge_displacement": 0.006928589245685022,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.0640525771419157,
+        "relative_equilibrium_residual": 3.871711127261446e-12,
+        "lower_tip_ratio_to_initial": 0.3224864804065831,
+        "max_edge_ratio_to_initial": 0.3224864804065831
+      }
+    },
+    "14x4": {
+      "initial": {
+        "longitudinal_elements": 14,
+        "transverse_elements": 4,
+        "degrees_of_freedom": 1118,
+        "signed_lower_tip_displacement": -0.021558782920749087,
+        "signed_upper_tip_displacement": -0.02153206815462196,
+        "max_abs_right_edge_displacement": 0.021558782920749087,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.21063057017125442,
+        "relative_equilibrium_residual": 1.852595467981486e-11,
+        "lower_tip_ratio_to_initial": 1.0,
+        "max_edge_ratio_to_initial": 1.0
+      },
+      "lian_mma": {
+        "longitudinal_elements": 14,
+        "transverse_elements": 4,
+        "degrees_of_freedom": 1118,
+        "signed_lower_tip_displacement": -0.006951503359366785,
+        "signed_upper_tip_displacement": -0.006943426181744974,
+        "max_abs_right_edge_displacement": 0.006951503359366785,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06387928627695669,
+        "relative_equilibrium_residual": 1.3846680660206568e-11,
+        "lower_tip_ratio_to_initial": 0.3224441465420742,
+        "max_edge_ratio_to_initial": 0.3224441465420742
+      },
+      "sun_pso": {
+        "longitudinal_elements": 14,
+        "transverse_elements": 4,
+        "degrees_of_freedom": 1118,
+        "signed_lower_tip_displacement": -0.007041937948340531,
+        "signed_upper_tip_displacement": -0.00703373043928836,
+        "max_abs_right_edge_displacement": 0.007041937948340531,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.0652618009913403,
+        "relative_equilibrium_residual": 1.1771986135686668e-11,
+        "lower_tip_ratio_to_initial": 0.32663893756094514,
+        "max_edge_ratio_to_initial": 0.32663893756094514
+      },
+      "current_method": {
+        "longitudinal_elements": 14,
+        "transverse_elements": 4,
+        "degrees_of_freedom": 1118,
+        "signed_lower_tip_displacement": -0.006938883112443411,
+        "signed_upper_tip_displacement": -0.006930521771544481,
+        "max_abs_right_edge_displacement": 0.006938883112443411,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06419983894137421,
+        "relative_equilibrium_residual": 1.096339697008169e-11,
+        "lower_tip_ratio_to_initial": 0.32185875881542164,
+        "max_edge_ratio_to_initial": 0.32185875881542164
+      }
+    },
+    "28x6": {
+      "initial": {
+        "longitudinal_elements": 28,
+        "transverse_elements": 6,
+        "degrees_of_freedom": 3230,
+        "signed_lower_tip_displacement": -0.021584052970407403,
+        "signed_upper_tip_displacement": -0.021557343615051305,
+        "max_abs_right_edge_displacement": 0.021584052970407403,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.21088728666583778,
+        "relative_equilibrium_residual": 3.207150702436674e-11,
+        "lower_tip_ratio_to_initial": 1.0,
+        "max_edge_ratio_to_initial": 1.0
+      },
+      "lian_mma": {
+        "longitudinal_elements": 28,
+        "transverse_elements": 6,
+        "degrees_of_freedom": 3230,
+        "signed_lower_tip_displacement": -0.006956044016845511,
+        "signed_upper_tip_displacement": -0.006948105572292558,
+        "max_abs_right_edge_displacement": 0.006956044016845511,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06392524778517239,
+        "relative_equilibrium_residual": 2.0388658131985586e-11,
+        "lower_tip_ratio_to_initial": 0.32227700823300076,
+        "max_edge_ratio_to_initial": 0.32227700823300076
+      },
+      "sun_pso": {
+        "longitudinal_elements": 28,
+        "transverse_elements": 6,
+        "degrees_of_freedom": 3230,
+        "signed_lower_tip_displacement": -0.007046072707692437,
+        "signed_upper_tip_displacement": -0.007038023784131042,
+        "max_abs_right_edge_displacement": 0.007046072707692437,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06530393552406424,
+        "relative_equilibrium_residual": 2.008159730402868e-11,
+        "lower_tip_ratio_to_initial": 0.3264480826354941,
+        "max_edge_ratio_to_initial": 0.3264480826354941
+      },
+      "current_method": {
+        "longitudinal_elements": 28,
+        "transverse_elements": 6,
+        "degrees_of_freedom": 3230,
+        "signed_lower_tip_displacement": -0.006943338782166544,
+        "signed_upper_tip_displacement": -0.006935147148980979,
+        "max_abs_right_edge_displacement": 0.006943338782166544,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06424566785677258,
+        "relative_equilibrium_residual": 1.796998912780699e-11,
+        "lower_tip_ratio_to_initial": 0.3216883683377787,
+        "max_edge_ratio_to_initial": 0.3216883683377787
+      }
+    },
+    "56x10": {
+      "initial": {
+        "longitudinal_elements": 56,
+        "transverse_elements": 10,
+        "degrees_of_freedom": 10478,
+        "signed_lower_tip_displacement": -0.021592943314184536,
+        "signed_upper_tip_displacement": -0.021566237465612956,
+        "max_abs_right_edge_displacement": 0.021592943314184536,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.2109782846792433,
+        "relative_equilibrium_residual": 7.454339719140419e-11,
+        "lower_tip_ratio_to_initial": 1.0,
+        "max_edge_ratio_to_initial": 1.0
+      },
+      "lian_mma": {
+        "longitudinal_elements": 56,
+        "transverse_elements": 10,
+        "degrees_of_freedom": 10478,
+        "signed_lower_tip_displacement": -0.006957972311253976,
+        "signed_upper_tip_displacement": -0.006949939231106183,
+        "max_abs_right_edge_displacement": 0.006957972311253976,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06394349585950003,
+        "relative_equilibrium_residual": 4.677065556330476e-11,
+        "lower_tip_ratio_to_initial": 0.32223362095723385,
+        "max_edge_ratio_to_initial": 0.32223362095723385
+      },
+      "sun_pso": {
+        "longitudinal_elements": 56,
+        "transverse_elements": 10,
+        "degrees_of_freedom": 10478,
+        "signed_lower_tip_displacement": -0.007047804427827675,
+        "signed_upper_tip_displacement": -0.007039659016125059,
+        "max_abs_right_edge_displacement": 0.007047804427827675,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06532017926157764,
+        "relative_equilibrium_residual": 5.012862236285814e-11,
+        "lower_tip_ratio_to_initial": 0.326393874391266,
+        "max_edge_ratio_to_initial": 0.326393874391266
+      },
+      "current_method": {
+        "longitudinal_elements": 56,
+        "transverse_elements": 10,
+        "degrees_of_freedom": 10478,
+        "signed_lower_tip_displacement": -0.00694526132019599,
+        "signed_upper_tip_displacement": -0.006936972172892808,
+        "max_abs_right_edge_displacement": 0.00694526132019599,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06426390664194488,
+        "relative_equilibrium_residual": 4.280819425903466e-11,
+        "lower_tip_ratio_to_initial": 0.3216449568333561,
+        "max_edge_ratio_to_initial": 0.3216449568333561
+      }
+    },
+    "112x16": {
+      "initial": {
+        "longitudinal_elements": 112,
+        "transverse_elements": 16,
+        "degrees_of_freedom": 33026,
+        "signed_lower_tip_displacement": -0.021596228803373314,
+        "signed_upper_tip_displacement": -0.02156952318738726,
+        "max_abs_right_edge_displacement": 0.021596228803373314,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.21101198401222165,
+        "relative_equilibrium_residual": 1.7646741877498198e-10,
+        "lower_tip_ratio_to_initial": 1.0,
+        "max_edge_ratio_to_initial": 1.0
+      },
+      "lian_mma": {
+        "longitudinal_elements": 112,
+        "transverse_elements": 16,
+        "degrees_of_freedom": 33026,
+        "signed_lower_tip_displacement": -0.006958700372370368,
+        "signed_upper_tip_displacement": -0.006950667171960782,
+        "max_abs_right_edge_displacement": 0.006958700372370368,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06395073367350637,
+        "relative_equilibrium_residual": 9.577500533242168e-11,
+        "lower_tip_ratio_to_initial": 0.3222183111564101,
+        "max_edge_ratio_to_initial": 0.3222183111564101
+      },
+      "sun_pso": {
+        "longitudinal_elements": 112,
+        "transverse_elements": 16,
+        "degrees_of_freedom": 33026,
+        "signed_lower_tip_displacement": -0.007048447099834417,
+        "signed_upper_tip_displacement": -0.007040301139994813,
+        "max_abs_right_edge_displacement": 0.007048447099834417,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06532654525771832,
+        "relative_equilibrium_residual": 9.59559126949458e-11,
+        "lower_tip_ratio_to_initial": 0.32637397779067123,
+        "max_edge_ratio_to_initial": 0.32637397779067123
+      },
+      "current_method": {
+        "longitudinal_elements": 112,
+        "transverse_elements": 16,
+        "degrees_of_freedom": 33026,
+        "signed_lower_tip_displacement": -0.006945987998576313,
+        "signed_upper_tip_displacement": -0.006937697826080737,
+        "max_abs_right_edge_displacement": 0.006945987998576313,
+        "max_abs_right_edge_y": 0.0,
+        "load_work": 0.06427114392313496,
+        "relative_equilibrium_residual": 9.268191306337508e-11,
+        "lower_tip_ratio_to_initial": 0.32162967256076463,
+        "max_edge_ratio_to_initial": 0.32162967256076463
+      }
+    }
+  }
+}

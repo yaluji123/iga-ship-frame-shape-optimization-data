@@ -1,0 +1,71 @@
+{
+  "method": "Norm of d-(d\u00b7n)n at archived physical stress quadrature points, each patch's original Cartesian director and exact current bicubic surface normals",
+  "states": {
+    "baseline": {
+      "beta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "patches": {
+        "B4A": {
+          "count": 24067,
+          "baseline_director": [
+            1.0,
+            2.7317523161554005e-16,
+            -3.804088063746251e-40
+          ],
+          "center_baseline_angle_deg": 2.151161345008625e-12,
+          "max_angle_deg": 1.2173686796157394e-12,
+          "max_xyz_error_mm": 1.8189894035458565e-11,
+          "min_tangent_projection_norm": 1.0
+        },
+        "B52": {
+          "count": 432,
+          "baseline_director": [
+            1.4506914188428657e-15,
+            -2.406963517386223e-14,
+            -1.0
+          ],
+          "center_baseline_angle_deg": 2.4517196874578e-13,
+          "max_angle_deg": 2.4020071780157496e-12,
+          "max_xyz_error_mm": 1.4551915228366852e-11,
+          "min_tangent_projection_norm": 1.0
+        }
+      }
+    },
+    "mass_budget": {
+      "beta": [
+        3.605364960097396,
+        -0.5479350643659159,
+        -4.693765752535612
+      ],
+      "patches": {
+        "B4A": {
+          "count": 24067,
+          "baseline_director": [
+            1.0,
+            2.7317523161554005e-16,
+            -3.804088063746251e-40
+          ],
+          "center_baseline_angle_deg": 2.151161345008625e-12,
+          "max_angle_deg": 37.46921245010021,
+          "max_xyz_error_mm": 1.8189894035458565e-11,
+          "min_tangent_projection_norm": 1.0
+        },
+        "B52": {
+          "count": 432,
+          "baseline_director": [
+            1.4506914188428657e-15,
+            -2.406963517386223e-14,
+            -1.0
+          ],
+          "center_baseline_angle_deg": 2.4517196874578e-13,
+          "max_angle_deg": 2.1603306492084697e-12,
+          "max_xyz_error_mm": 1.4551915228366852e-11,
+          "min_tangent_projection_norm": 1.0
+        }
+      }
+    }
+  }
+}
