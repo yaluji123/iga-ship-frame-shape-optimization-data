@@ -23,6 +23,6 @@ The [data README](data/README.txt) lists the 12 verification commands and depend
 
 Yuheng Ji, Zhijie Dai, Deyu Wang, Yao Wang, and Chuntong Li (2026). *Replication data for Isogeometric shape optimization of trimmed ship-frame connections using consistent stress sensitivities*. Version 1.2.1. Zenodo.
 
-Cite the [version 1.2.1 Zenodo archive](https://doi.org/10.5281/zenodo.24492805) using DOI 10.5281/zenodo.24492805. The [citation file](CITATION.cff) provides the author details.
+Cite the [version 1.2.1 Zenodo archive](https://zenodo.org/records/24492805) using DOI 10.5281/zenodo.24492805. The [citation file](CITATION.cff) provides the author details.
 
 The copyright notice and terms for the data and scripts are provided in [LICENSE](LICENSE).
