@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this dataset when referring to these numerical records."
+type: dataset
+title: "Replication data for Isogeometric shape optimization of trimmed ship-frame connections using consistent stress sensitivities"
+version: "1.2.0"
+repository-code: "https://github.com/yaluji123/iga-ship-frame-shape-optimization-data"
+authors:
+  - family-names: "Ji"
+    given-names: "Yuheng"
+  - family-names: "Fang"
+    given-names: "Chun"
+  - family-names: "Dai"
+    given-names: "Zhijie"
+  - family-names: "Wei"
+    given-names: "Pengyu"
+  - family-names: "Wang"
+    given-names: "Deyu"
+  - family-names: "Li"
+    given-names: "Chuntong"

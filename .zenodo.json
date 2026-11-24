@@ -1,0 +1,43 @@
+{
+  "title": "Replication data for Isogeometric shape optimization of trimmed ship-frame connections using consistent stress sensitivities",
+  "upload_type": "dataset",
+  "version": "1.2.0",
+  "creators": [
+    {
+      "name": "Ji, Yuheng",
+      "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
+    },
+    {
+      "name": "Fang, Chun",
+      "affiliation": "National Key Laboratory of Ship Structural Safety / China Ship Scientific Research Center"
+    },
+    {
+      "name": "Dai, Zhijie",
+      "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
+    },
+    {
+      "name": "Wei, Pengyu",
+      "affiliation": "National Key Laboratory of Ship Structural Safety / China Ship Scientific Research Center"
+    },
+    {
+      "name": "Wang, Deyu",
+      "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
+    },
+    {
+      "name": "Li, Chuntong",
+      "affiliation": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University / School of Ocean and Civil Engineering, Shanghai Jiao Tong University"
+    }
+  ],
+  "description": "<p>Numerical verification data and scripts for stress-driven shape optimization of moving trimmed shell connections. The archive contains manufactured shell results, open-joint models, reconstructions of a single-edge cantilever and a flat T-beam benchmark, and ship-frame records for the corrected endpoint norm, stress recovery, discrete sensitivities, and support-penalty checks.</p><p>The ship-frame evidence includes the matched analytic and central-difference continuation from a common prepared design, the stationarity comparison from a straight frame, a separately selected first-feasible IGA shape, and paired finite element checks at a fixed reference geometry.</p><p>The README indexes the files and verification commands. The small-model scripts reassemble and solve their specified examples. The ship-frame scripts check archived responses and geometry. Solving a new full frame requires the original CAD assembly and compatible solvers.</p>",
+  "access_right": "open",
+  "license": "other-closed",
+  "keywords": [
+    "shape optimization",
+    "isogeometric analysis",
+    "shells",
+    "moving trimmed interfaces",
+    "Nitsche coupling",
+    "adjoint sensitivity",
+    "ship frame"
+  ]
+}
