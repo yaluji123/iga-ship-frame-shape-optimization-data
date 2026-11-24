@@ -8,6 +8,10 @@ The archive contains manufactured shells and open joints, literature optimizatio
 
 The small examples can be reassembled and solved with the included scripts. The ship-frame checks verify saved numerical records. New full-frame analyses require the original ship CAD and compatible analysis software.
 
+## Citation
+
+Cite version 1.2.0 using its [Zenodo version DOI](https://doi.org/10.5281/zenodo.24490794).
+
 ## Rights
 
 Copyright (c) 2026 Yuheng Ji, Chun Fang, Zhijie Dai, Pengyu Wei, Deyu Wang, and Chuntong Li.

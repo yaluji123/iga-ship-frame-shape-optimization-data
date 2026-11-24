@@ -4,6 +4,11 @@ type: dataset
 title: "Replication data for Isogeometric shape optimization of trimmed ship-frame connections using consistent stress sensitivities"
 version: "1.2.0"
 repository-code: "https://github.com/yaluji123/iga-ship-frame-shape-optimization-data"
+date-released: 2026-11-24
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24490794"
+    description: "DOI for version 1.2.0"
 authors:
   - family-names: "Ji"
     given-names: "Yuheng"
